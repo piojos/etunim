@@ -1,0 +1,322 @@
+*
+	box-sizing: border-box
+html
+	font-size: 62.5%
+
+body
+	font-size: 1.6em
+	line-height: 1.6
+	font-weight: 300
+	font-family: "Source Sans Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif
+	color: $black
+	background: #EDEDED
+
+
+
+
+.container
+	position: relative
+	width: 100%
+	// max-width: 960px
+	margin: 0 auto
+	padding: 0 20px
+	box-sizing: border-box
+.column,
+.columns
+	width: 100%
+	float: left
+	box-sizing: border-box
+
+/* For devices larger than 400px */
+@media (min-width: 400px)
+	.container
+		width: 85%
+		padding: 0
+
+/* For devices larger than 550px */
+@media (min-width: 550px)
+	.container
+		width: 80%
+	.column,
+	.columns
+		margin-left: 4%
+	.column:first-child,
+	.columns:first-child
+		margin-left: 0
+
+	// .one.column,
+	// .one.columns
+	// 	width: 4.66666666667%
+	// .two.columns
+	// 	width: 13.3333333333%
+	.three.columns
+		width: 22%
+	// .four.columns
+	// 	width: 30.6666666667%
+	// .five.columns
+	// 	width: 39.3333333333%
+	// .six.columns
+	// 	width: 48%
+	// .seven.columns
+	// 	width: 56.6666666667%
+	// .eight.columns
+	// 	width: 65.3333333333%
+	.nine.columns
+		width: 74.0%
+	// .ten.columns
+	// 	width: 82.6666666667%
+	// .eleven.columns
+	// 	width: 91.3333333333%
+	// .twelve.columns
+	// 	width: 100%
+	// 	margin-left: 0
+	//
+	// .one-third.column
+	// 	width: 30.6666666667%
+	// .two-thirds.column
+	// 	width: 65.3333333333%
+	//
+	// .one-half.column
+	// 	width: 48%
+
+	/* Offsets */
+	// .offset-by-one.column,
+	// .offset-by-one.columns
+	// 	margin-left: 8.66666666667%
+	// .offset-by-two.column,
+	// .offset-by-two.columns
+	// 	margin-left: 17.3333333333%
+	// .offset-by-three.column,
+	// .offset-by-three.columns
+	// 	margin-left: 26%
+	// .offset-by-four.column,
+	// .offset-by-four.columns
+	// 	margin-left: 34.6666666667%
+	// .offset-by-five.column,
+	// .offset-by-five.columns
+	// 	margin-left: 43.3333333333%
+	// .offset-by-six.column,
+	// .offset-by-six.columns
+	// 	margin-left: 52%
+	// .offset-by-seven.column,
+	// .offset-by-seven.columns
+	// 	margin-left: 60.6666666667%
+	// .offset-by-eight.column,
+	// .offset-by-eight.columns
+	// 	margin-left: 69.3333333333%
+	// .offset-by-nine.column,
+	// .offset-by-nine.columns
+	// 	margin-left: 78.0%
+	// .offset-by-ten.column,
+	// .offset-by-ten.columns
+	// 	margin-left: 86.6666666667%
+	// .offset-by-eleven.column,
+	// .offset-by-eleven.columns
+	// 	margin-left: 95.3333333333%
+	//
+	// .offset-by-one-third.column,
+	// .offset-by-one-third.columns
+	// 	margin-left: 34.6666666667%
+	// .offset-by-two-thirds.column,
+	// .offset-by-two-thirds.columns
+	// 	margin-left: 69.3333333333%
+	//
+	// .offset-by-one-half.column,
+	// .offset-by-one-half.columns
+	// 	margin-left: 52%
+
+
+
+
+
+
+a
+	color: initial
+	text-decoration: none
+strong, h3
+	font-weight: bold
+h2
+	font-size: 2.4rem
+	margin-bottom: 1em
+.button
+	background: $lightgray
+	padding: 1em 2em
+	display: inline-block
+	border-radius: $radius
+	color: white
+
+
+
+
+
+
+
+
+
+
+
+
+
+header
+	height: 6em
+	padding: 2em
+	a.logo
+		float: left
+	&.common
+		background: $oxford
+
+nav
+	float: right
+	a
+		color: white
+		text-decoration: none
+		display: inline-block
+		margin: 0 1em
+		height: 6em
+		position: relative
+		top: -2em
+		vertical-align: middle
+		padding-top: 2.25em
+		&:last-child
+			margin-right: 0
+		&.current
+			border-bottom: solid .3em white
+			font-weight: bold
+	img
+		margin-top: -.75em
+	.alert
+		position: absolute
+		background: $red
+		width: 1.5em
+		font-size: .75em
+		height: 1.5em
+		text-align: center
+		border-radius: 50%
+		right: -1em
+		top: 2em
+
+.sidebar
+	background: white
+	padding: 1em
+	margin-top: 2em
+	box-shadow: $shadow
+
+
+
+
+
+// Home
+.stats
+	margin-bottom: 2em
+
+.stat
+	width: 8em
+	display: inline-block
+	text-align: center
+	.number
+		background: gray
+		display: inline-block
+		font-size: 3em
+		height: 2em
+		width: 2em
+		text-align: center
+		color: white
+		border-radius: 50%
+		font-weight: bold
+		padding-top: .15em
+	h4
+		font-size: 1.2rem
+		text-transform: uppercase
+		margin-top: .5em
+
+
+// Card
+.cards
+	.card
+		margin-bottom: 1em
+
+.card
+	border-radius: $radius
+	box-shadow: $shadow
+	background: white
+	position: relative
+	overflow: auto
+	min-height: 9rem
+	a
+		width: 100%
+		height: 100%
+		position: absolute
+		> div
+			position: relative
+			float: left
+			vertical-align: top
+			padding: 1em 0 0 1em
+	.profiles
+		width: 10%
+		height: 2em
+		img
+			width: 100%
+			height: 100%
+		> div
+			position: absolute
+			border-radius: 50%
+			overflow: hidden
+			width: 4.2rem
+			height: 4.2rem
+			border: 2px solid white
+			z-index: 2
+		& div:nth-child(2)
+			opacity: .5
+			left: 1.6em
+			z-index: 1
+	.title
+		width: 35%
+	.details, .icons
+		font-size: 1.4rem
+		padding-top: 1.3em
+	.details
+		width: 25%
+	.icons
+		width: 20%
+		img
+			vertical-align: text-bottom
+		> div
+			display: inline-block
+
+	.incharge,
+	.deliver
+		white-space: nowrap
+		width: 100%
+		overflow: hidden
+		text-overflow: ellipsis
+	.checkbox
+		width: 10%
+		text-align: right
+		padding-right: 1em
+		.square
+			border: 3px solid $lightgray
+			width: 2em
+			height: 2em
+			border-radius: 5px
+			display: inline-block
+
+
+	&.overdue
+		border: 2px solid $red
+		.square
+			border-color: $red
+		.deliver
+			color: $red
+	&.done
+		.title, .details, .icons
+			color: $gray
+		&:before
+			background: $green
+			content: ''
+			position: absolute
+			width: 2em
+			height: 100%
+			left: 0
+	&.single .profiles > div
+		width: 5rem
+		height: 5rem
