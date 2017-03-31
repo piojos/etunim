@@ -62,6 +62,10 @@
 					echo card('long single');
 					echo card('long '); ?>
 
+					<div class="loadcard">
+						<p>Filtrando...</p>
+					</div>
+
 				</div>
 
 			</div>
