@@ -9,20 +9,26 @@
 					<li>
 						<a href="#">
 							<h3>Junta de Revisión Prototipo Minute</h3>
-							<p>Lugar: <strong>via Skype</strong> <br>
-							Fecha: <strong>9 de marzo, 09:00 am</strong></p>
+							<div class="details">
+								<p>Lugar: <strong>via Skype</strong> <br>
+								Fecha: <strong>9 de marzo, 09:00 am</strong></p>
+							</div>
 						</a>
 					</li>
 					<li>
 						<a href="#">
 							<h3>Junta de Arranque Proyecto Minute App</h3>
-							<p>Lugar: <strong>Piso 3, sala de juntas A</strong> <br>
-							Fecha: <strong>28 de marzo, 10:00 am</strong></p>
+							<div class="details">
+								<p>Lugar: <strong>Piso 3, sala de juntas A</strong> <br>
+								Fecha: <strong>28 de marzo, 10:00 am</strong></p>
+							</div>
 						</a>
 					</li>
 				</ul>
-				<a href="#" class="button"> Crear junta</a>
-				<a href="#" class="button"> Agregar pendiente</a>
+				<div class="actions">
+					<a href="#" class="button yellow"> Crear junta</a>
+					<a href="#" class="button blue"> Agregar pendiente</a>
+				</div>
 			</div>
 
 
@@ -55,8 +61,6 @@
 					echo card('long overdue');
 					echo card('long single');
 					echo card('long '); ?>
-
-
 
 				</div>
 
