@@ -58,6 +58,21 @@ input[type="button"]
 .small
 	font-size: 1.2rem
 
+select
+	min-width: 11em
+	-webkit-appearance: initial
+	background: none
+	border: none
+	outline: none
+
+.dropdown
+	position: relative
+	&:after
+		content: '>'
+		display: block
+		position: absolute
+		top: 0
+		right: 0
 
 
 
@@ -105,6 +120,7 @@ input[type="button"]
 			position: absolute
 			top: 0
 			right: 0
+			text-align: center
 		form
 			margin-top: 1em
 		.small
@@ -142,9 +158,76 @@ input[type="button"]
 			padding-bottom: 1em
 			border-bottom: none
 	.actions
+		text-align: center
+		margin-top: 4em
 		a.button
 			width: 100%
 			margin-top: 1em
+	&.filter
+		padding: 0
+		li
+			padding: 2rem
+			margin-bottom: 0
+			&.search
+				padding: 0
+				position: relative
+				input
+					background: none
+					border: none
+					padding: 2rem
+				button
+					padding: initial
+					background: none
+					border: none
+					position: absolute
+					top: 2rem
+					right: 2rem
+		.calendar
+			position: relative
+			.title
+				text-align: center
+				position: relative
+				z-index: 2
+				a:nth-child(1)
+					float: left
+				a:last-child
+					float: right
+		select
+			width: 100%
+		.actions
+			padding: 2em 1rem
+			color: lightgray
+
+
+// Calendar
+
+.month
+	background: lightgray
+	position: absolute
+	width: 94%
+	top: 0.6rem
+	left: 3%
+	z-index: 1
+	padding: 6em 1.5em 2em
+	font-size: 1.2rem
+	table
+		width: 100%
+		.activity
+			font-weight: bold
+			color: $blue
+	th, td
+		text-align: center
+		padding: .5rem 0 0
+	thead th
+		font-weight: bold
+
+
+
+
+
+
+
+
 
 .stats
 	margin-bottom: 2em
@@ -230,6 +313,9 @@ input[type="button"]
 			vertical-align: text-bottom
 		> div
 			display: inline-block
+			margin-right: 1rem
+			&:last-child
+				margin-right: 0
 
 	.incharge,
 	.deliver
