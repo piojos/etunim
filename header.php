@@ -29,14 +29,20 @@
 
 </head>
 <body>
-	<header class="common">
+	<header class="<?php
+		if($headClass) {
+			echo $headClass;
+		} else {
+			echo 'common';
+		}
+	?>">
 		<div class="container">
 			<a href="#" class="logo"><img src="http://placehold.it/170x40" alt=""></a>
 			<nav>
-				<a href="#" class="current">Inicio</a>
-				<a href="#">Pendientes</a>
-				<a href="#">Juntas</a>
-				<a href="#">Etiquetas</a>
+				<a href="index.php" class="current">Inicio</a>
+				<a href="pendientes.php">Pendientes</a>
+				<a href="juntas.php">Juntas</a>
+				<a href="etiquetas.php">Etiquetas</a>
 				<a href="#" class="profile"><img src="http://placehold.it/44" alt=""></a>
 				<a href="#"><img src="http://placehold.it/44" alt=""><span class="alert">1</span></a>
 			</nav>
@@ -44,6 +50,11 @@
 	</header>
 
 <?php
+
+
+
+
+
 
 	// FUNCTIONS
 
@@ -67,7 +78,7 @@
 			</div>
 			<div class="details">
 				<div class="incharge">Responsables: <?php
-				if(!strpos($status, 'single')) { 
+				if(!strpos($status, 'single')) {
 					echo '<strong>Luis</strong>, <strong>Edgar</strong>, <strong>María</strong>';
 				} else {
 					echo '<strong>Luis Herrada</strong>';
