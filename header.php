@@ -45,7 +45,7 @@
 
 <?php
 
-// FUNCTIONS
+	// FUNCTIONS
 
 	function card($status = array()) { ?>
 		<div class="card <?php echo $status; ?>">
@@ -66,7 +66,13 @@
 				Pendiente normal con varios responsables
 			</div>
 			<div class="details">
-				<div class="incharge">Responsables: <strong>Luis</strong>, <strong>Edgar</strong>, <strong>María</strong></div>
+				<div class="incharge">Responsables: <?php
+				if(!strpos($status, 'single')) { 
+					echo '<strong>Luis</strong>, <strong>Edgar</strong>, <strong>María</strong>';
+				} else {
+					echo '<strong>Luis Herrada</strong>';
+				} ?>
+				</div>
 				<div class="deliver">Entrega: <strong>6 de Abril</strong></div>
 			</div>
 			<div class="icons">
