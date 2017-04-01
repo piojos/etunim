@@ -144,6 +144,7 @@ select
 // Dashboard
 
 .sidebar
+	position: relative
 	background: white
 	padding: 1em
 	margin-top: 2em
@@ -157,6 +158,28 @@ select
 		&:last-child
 			padding-bottom: 1em
 			border-bottom: none
+	.search
+		padding: 0
+		position: relative
+		input
+			background: none
+			border: none
+			padding: 2rem
+		button
+			padding: initial
+			background: none
+			border: none
+			position: absolute
+			top: 2rem
+			right: 2rem
+	&.searchable
+		padding-top: 5em
+	> .search
+		width: 100%
+		position: absolute
+		top: 0
+		left: 0
+		border-bottom: 1px solid lightgray
 	.actions
 		text-align: center
 		margin-top: 4em
@@ -168,20 +191,6 @@ select
 		li
 			padding: 2rem
 			margin-bottom: 0
-			&.search
-				padding: 0
-				position: relative
-				input
-					background: none
-					border: none
-					padding: 2rem
-				button
-					padding: initial
-					background: none
-					border: none
-					position: absolute
-					top: 2rem
-					right: 2rem
 		.calendar
 			position: relative
 			.title
@@ -345,16 +354,26 @@ select
 			color: $gray
 		&:before
 			background: $green
-			content: ''
-			position: absolute
-			width: 2em
-			height: 100%
-			left: 0
-		.checkbox .square
-			border-color: $green
+			.checkbox .square
+				border-color: $green
+	&:before
+		content: ''
+		position: absolute
+		width: 2em
+		height: 100%
+		left: 0
 	&.single .profiles > div
 		width: 5rem
 		height: 5rem
+	&.meeting
+		.title
+			margin-left: 2em
+			width: 40%
+		.details
+			width: 30%
+		&:before
+			background: $yellow
+
 
 .loadcard
 	background: lightgray

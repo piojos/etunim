@@ -61,6 +61,7 @@
 	function card($status = array()) { ?>
 		<div class="card <?php echo $status; ?>">
 			<a href="#">
+			<?php if(!strpos($status, 'meeting')) { ?>
 			<div class="profiles">
 				<div>
 					<img src="http://placehold.it/42" alt="">
@@ -71,8 +72,8 @@
 						<img src="http://placehold.it/42" alt="">
 					</div>';
 				} ?>
-
 			</div>
+			<?php } ?>
 			<div class="title">
 				Pendiente normal con varios responsables
 			</div>
@@ -96,11 +97,13 @@
 					<span>3</span>
 				</div>
 			</div>
+			<?php if(!strpos($status, 'meeting')) { ?>
 			<div class="checkbox">
 				<div class="square">
 					<div class="check"></div>
 				</div>
 			</div>
+			<?php } ?>
 			</a>
 		</div><?php
 	}

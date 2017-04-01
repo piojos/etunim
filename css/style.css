@@ -281,6 +281,7 @@ select {
   margin-bottom: 1em; }
 
 .sidebar {
+  position: relative;
   background: white;
   padding: 1em;
   margin-top: 2em;
@@ -294,6 +295,28 @@ select {
     .sidebar li:last-child {
       padding-bottom: 1em;
       border-bottom: none; }
+  .sidebar .search {
+    padding: 0;
+    position: relative; }
+    .sidebar .search input {
+      background: none;
+      border: none;
+      padding: 2rem; }
+    .sidebar .search button {
+      padding: initial;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 2rem;
+      right: 2rem; }
+  .sidebar.searchable {
+    padding-top: 5em; }
+  .sidebar > .search {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid lightgray; }
   .sidebar .actions {
     text-align: center;
     margin-top: 4em; }
@@ -305,20 +328,6 @@ select {
     .sidebar.filter li {
       padding: 2rem;
       margin-bottom: 0; }
-      .sidebar.filter li.search {
-        padding: 0;
-        position: relative; }
-        .sidebar.filter li.search input {
-          background: none;
-          border: none;
-          padding: 2rem; }
-        .sidebar.filter li.search button {
-          padding: initial;
-          background: none;
-          border: none;
-          position: absolute;
-          top: 2rem;
-          right: 2rem; }
     .sidebar.filter .calendar {
       position: relative; }
       .sidebar.filter .calendar .title {
@@ -456,17 +465,25 @@ select {
   .card.done .title, .card.done .details, .card.done .icons {
     color: #C0BCBB; }
   .card.done:before {
-    background: #9AD102;
+    background: #9AD102; }
+    .card.done:before .checkbox .square {
+      border-color: #9AD102; }
+  .card:before {
     content: "";
     position: absolute;
     width: 2em;
     height: 100%;
     left: 0; }
-  .card.done .checkbox .square {
-    border-color: #9AD102; }
   .card.single .profiles > div {
     width: 5rem;
     height: 5rem; }
+  .card.meeting .title {
+    margin-left: 2em;
+    width: 40%; }
+  .card.meeting .details {
+    width: 30%; }
+  .card.meeting:before {
+    background: #FAC24E; }
 
 .loadcard {
   background: lightgray;
