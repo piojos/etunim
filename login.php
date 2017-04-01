@@ -44,7 +44,7 @@
 			<div class="manual">
 				<p>o con tus datos:</p>
 				<a href="#" class="action float_right">Registrar</a>
-				<form class="" action="" method="post">
+				<form class="" action="index.php" method="post">
 					<input type="email" name="" value="" placeholder="Correo">
 					<input type="password" name="" value="" placeholder="Contraseña">
 					<div class="alert">Correo o contraseña invalida.</div>

@@ -230,6 +230,12 @@ select {
     top: 0;
     right: 0; }
 
+.tag {
+  background: #1F80A6;
+  padding: 0.1em 0.5em 0.2em;
+  border-radius: 5px;
+  color: white; }
+
 .modal {
   background: white;
   position: relative;
@@ -320,6 +326,8 @@ select {
   .sidebar .actions {
     text-align: center;
     margin-top: 4em; }
+    .sidebar .actions .loading {
+      color: #DDDCDA; }
     .sidebar .actions a.button {
       width: 100%;
       margin-top: 1em; }
@@ -343,6 +351,12 @@ select {
     .sidebar.filter .actions {
       padding: 2em 1rem;
       color: lightgray; }
+  .sidebar .results .tag {
+    margin: 0 0.8rem 1rem 0;
+    display: inline-block;
+    background: lightgray; }
+  .sidebar .results .active {
+    background: #1F80A6; }
 
 .month {
   background: lightgray;

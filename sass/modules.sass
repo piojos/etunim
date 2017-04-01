@@ -74,7 +74,11 @@ select
 		top: 0
 		right: 0
 
-
+.tag
+	background: $teal
+	padding: .1em .5em .2em
+	border-radius: 5px
+	color: white
 
 
 
@@ -183,6 +187,8 @@ select
 	.actions
 		text-align: center
 		margin-top: 4em
+		.loading
+			color: $lightgray
 		a.button
 			width: 100%
 			margin-top: 1em
@@ -206,7 +212,13 @@ select
 		.actions
 			padding: 2em 1rem
 			color: lightgray
-
+	.results
+		.tag
+			margin: 0 .8rem 1rem 0
+			display: inline-block
+			background: lightgray
+		.active
+			background: #1F80A6
 
 // Calendar
 
