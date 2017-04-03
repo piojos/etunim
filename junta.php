@@ -42,6 +42,18 @@
 		</div>
 	</div>
 
+	<div class="middle tasks">
+		<h3>Pendientes (<span class="amount">2</span>)</h3>
+		<div class="cards"><?php
+			echo card('square overdue');
+			echo card('square single');
+			echo card('square done'); ?>
+		</div>
+	</div>
+
+
+
+
 	<div class="drawer right">
 		<div class="wrap">
 			<h3>Comentarios (<span class="amount">2</span>)</h3>
