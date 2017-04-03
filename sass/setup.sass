@@ -26,6 +26,7 @@ body
 	position: relative
 	width: 100%
 	// max-width: 960px
+	min-width: 840px
 	margin: 0 auto
 	padding: 0 20px
 	box-sizing: border-box
@@ -132,63 +133,3 @@ body
 	// .offset-by-one-half.column,
 	// .offset-by-one-half.columns
 	// 	margin-left: 52%
-
-
-
-
-
-
-
-
-
-
-// Header
-
-header
-	height: 6em
-	padding: 2em
-	a.logo
-		float: left
-	&.common
-		background: $oxford
-	&.blue
-		background: $blue
-	&.yellow
-		background: $yellow
-		a
-			color: $darkbrown
-			&.current
-				border-color: $darkbrown
-	&.teal
-		background: $teal
-
-nav
-	float: right
-	a
-		color: white
-		text-decoration: none
-		display: inline-block
-		margin: 0 1em
-		height: 6em
-		position: relative
-		top: -2em
-		vertical-align: middle
-		padding-top: 2.25em
-		&:last-child
-			margin-right: 0
-		&.current
-			border-bottom: solid .3em white
-			font-weight: bold
-	img
-		margin-top: -.75em
-	.alert
-		position: absolute
-		background: $red
-		width: 1.5em
-		font-size: .75em
-		height: 1.5em
-		text-align: center
-		border-radius: 50%
-		right: -1em
-		top: 2em
-		color: white
