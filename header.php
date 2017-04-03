@@ -29,7 +29,7 @@
 
   <?php include 'functions.php'; ?>
 </head>
-<body>
+<body class="<?php echo $bodyClass; ?>">
 	<header class="<?php
 		if($headClass) {
 			echo $headClass;
