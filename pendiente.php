@@ -7,11 +7,12 @@
 
 	<div class="drawer left">
 		<div class="wrap">
-			<h2>Junta de Arranque Proyecto Minute App</h2>
+			<h1>Junta de Arranque Proyecto Minute App</h1>
 			<div class="info">
 				<p class="tag date"><strong>27 febrero</strong>, a las <strong>4:00 pm</strong></p>
 				<p class="via"><img src="http://placehold.it/24" alt=""> <strong>Via Skype</strong></p>
 				<div class="profiles">
+					<h3>Participantes</h3>
 					<a href="#" data-tooltip-content="Nombre Apellido">
 						<img src="http://placehold.it/42" alt="Nombre Apellido">
 						<h4>Nombre</h4>
@@ -35,53 +36,49 @@
 					</div>
 				</div>
 				<div class="actions">
-					<a href="#">Editar</a>
+					<a href="#" class="text-button">Editar</a>
 				</div>
 			</div>
 		</div>
 	</div>
 
-<?php /*
-	<div class="drawer right">
-		<div class="wrap">
-			<h3>Comentarios (<span class="amount">2</span>)</h3>
-		</div>
-		<div class="comments wrap">
-			<div class="blank">
-				No hay comentarios aún.
-			</div>
 
-			<div class="incomming message">
-				<div class="profile picture">
-					<img src="http://placehold.it/42" alt="Nombre Apellido">
-				</div>
-				<div class="data">
-					<div class="name info">
-						Nombre Apellido <span>27 febrero, a las 4:00 pm</span>
-					</div>
-					<div class="content">
-						¿Si logramos salir con prototipo para el viernes 10? <a href="#">http://google.com</a>
-					</div>
-				</div>
-			</div>
 
-			<div class="incomming message">
-				<div class="profile picture">
-					<img src="http://placehold.it/42" alt="Nombre Apellido">
-				</div>
-				<div class="data">
-					<div class="name info">
-						Nombre Apellido <span>27 febrero, a las 4:00 pm</span>
+
+	<div class="middle tasks">
+		<h3>Tareas (<span class="amount">5</span>)</h3>
+		<div class="cards"><?php
+			echo card('square overdue');
+			echo card('square single');
+			echo card('square done'); ?>
+
+
+				<div class="card newtask">
+					<div class="profiles">
+						<div>
+							<img src="http://placehold.it/42" alt="">
+						</div>
 					</div>
-					<div class="content">
-						¿Si logramos salir con prototipo para el viernes 10? <a href="#">http://google.com</a>
-					</div>
+					<form class="" action="index.html" method="post">
+						<input type="text" name="task-name" value="" placeholder="Nombre de la tarea">
+						<input type="text" name="task-name" value="" placeholder="Responsables">
+						<input type="text" name="task-name" value="" placeholder="Fecha de entrega">
+						<div class="month" style="display:none">
+							<?php include 'inc/calendar.php'; ?>
+						</div>
+						<input type="text" name="task-name" value="" placeholder="Prioridad">
+						<input type="submit" name="" value="Guardar" class="text-button">
+					</form>
 				</div>
-			</div>
+
 
 		</div>
-	</div> */ ?>
+		<div class="actions" style="text-align:center;">
+			<a href="#" class="button blue">Agregar pendiente</a>
+		</div>
+	</div>
 
+	<?php include 'inc/comments.php'; ?>
 
 
 </body>
