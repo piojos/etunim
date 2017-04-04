@@ -209,5 +209,38 @@ body.detail-view
 		margin: 12.7rem 35% 2em
 	h3
 		margin-bottom: 1em
-	&.meeting h3
+
+.meeting .middle.tasks
+	h3, .amount
 		color: white
+
+
+
+
+
+//
+//
+// Pendiente Single
+
+.task .drawer.left
+	.priority:before
+		content: '!'
+		display: inline-block
+		width: 1.6em
+		height: 1.6em
+		text-align: center
+		margin-right: .5em
+		border-radius: 50%
+		background: $yellow
+		color: white
+		font-weight: bold
+		line-height: 1.7em
+	.priority.max:before
+		background: $red
+	.info
+		line-height: 2.2em
+	.actions
+		text-align: right
+	.edit
+		margin-top: 0.9em
+		float: left

@@ -12,7 +12,7 @@
 					echo 'pendiente.php';
 				} ?>">
 			<?php if(!strpos($status, 'meeting')) { ?>
-			<div class="profiles">
+			<div class="circle profiles">
 				<div>
 					<img src="http://placehold.it/42" alt="">
 				</div>

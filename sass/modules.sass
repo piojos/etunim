@@ -8,15 +8,19 @@ a
 	&.action
 		text-transform: uppercase
 		color: $gray
+
 strong, h3
 	font-weight: bold
 	.amount
 		color: $blue
+
 h2
 	font-size: 2.4rem
 	margin-bottom: 1em
+
 .button
 	background: $lightgray
+	line-height: normal
 	padding: 1em 2em
 	display: inline-block
 	border-radius: $radius
@@ -41,6 +45,7 @@ h2
 		padding: 1.4rem 0 0 0
 		height: 3em
 		background: $darkblue
+
 button,
 input,
 input[type="submit"],
@@ -81,7 +86,11 @@ select
 	padding: .1em .5em .2em
 	border-radius: 5px
 	color: white
-	&.date
+	// &.red
+	// 	background: $yellow
+	&.blue
+		background: $blue
+	&.yellow
 		background: $yellow
 		color: $darkbrown
 p.tag
@@ -291,6 +300,39 @@ p.tag
 
 
 
+
+
+//
+//
+// profiles
+.circle.profiles
+	width: 10%
+	height: 2em
+	img
+		width: 100%
+		height: 100%
+	> div
+		position: absolute
+		border-radius: 50%
+		overflow: hidden
+		width: 4.2rem
+		height: 4.2rem
+		border: 2px solid white
+		z-index: 2
+	& div:nth-child(2)
+		opacity: .5
+		left: 1.6em
+		z-index: 1
+
+
+
+
+
+
+
+
+
+
 //
 //
 // Card
@@ -316,24 +358,6 @@ p.tag
 			float: left
 			vertical-align: top
 			padding: 1em 0 0 1em
-	.profiles
-		width: 10%
-		height: 2em
-		img
-			width: 100%
-			height: 100%
-		> div
-			position: absolute
-			border-radius: 50%
-			overflow: hidden
-			width: 4.2rem
-			height: 4.2rem
-			border: 2px solid white
-			z-index: 2
-		& div:nth-child(2)
-			opacity: .5
-			left: 1.6em
-			z-index: 1
 	.title
 		width: 35%
 	.details, .icons
@@ -442,3 +466,46 @@ p.tag
 	margin-bottom: 2em
 	padding: 1em 2em
 	border-radius: 5px
+
+
+
+
+
+
+
+
+
+
+
+.task.title
+	position: relative
+	padding-left: 4em
+	margin-bottom: 2em
+	.circle.profiles
+		position: absolute
+		left: 0
+		div:nth-child(2)
+			left: 0.6em
+	h1
+		margin-bottom: 0
+
+
+
+
+
+
+
+a.button.resolve
+	position: relative
+	padding-right: 3.5em
+	&:after
+		content: ''
+		position: absolute
+		display: inline-block
+		width: 1.5em
+		height: 1.5em
+		background: $lightgray
+		top: .8em
+		right: 1em
+		border: 2px solid white
+		border-radius: $radius
