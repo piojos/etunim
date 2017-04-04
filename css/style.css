@@ -206,6 +206,10 @@ p.tag {
   .text-button.blue {
     color: #0C7BD5; }
 
+hr {
+  border: 1px solid #DDDCDA;
+  margin: 2em 0; }
+
 .modal {
   background: white;
   position: relative;
@@ -399,9 +403,9 @@ p.tag {
   position: relative;
   overflow: auto;
   min-height: 9rem; }
-  .card a {
+  .card > a {
     display: block; }
-    .card a > div {
+    .card > a > div {
       position: relative;
       float: left;
       vertical-align: top;
@@ -531,6 +535,101 @@ a.button.resolve {
     border: 2px solid white;
     border-radius: 0.5rem; }
 
+.active-modal .overlay {
+  position: fixed;
+  background: rgba(55, 74, 107, 0.9);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 200; }
+
+.modal {
+  z-index: 201;
+  padding: 1.4rem 2rem; }
+  .modal#notifications {
+    width: 40rem; }
+  .modal#profile-stats .header {
+    padding-left: 3.4em; }
+  .modal#profile-stats {
+    width: 24em; }
+  .modal .header {
+    border-bottom: 0.2rem solid #DDDCDA;
+    padding-bottom: 1rem;
+    margin-bottom: 1em; }
+    .modal .header .circle.profiles {
+      position: absolute;
+      left: 2rem; }
+  .modal a.close {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    top: 1.75em;
+    right: 2rem; }
+    .modal a.close:before, .modal a.close:after {
+      width: 100%;
+      content: "";
+      border-top: 0.2rem solid #DDDCDA;
+      display: block;
+      transform: rotate(45deg);
+      top: 0;
+      left: 0;
+      position: absolute; }
+    .modal a.close:before {
+      transform: rotate(-45deg); }
+  .modal h2 {
+    margin-bottom: 0.25em; }
+  .modal .card {
+    padding: 1rem;
+    overflow: hidden; }
+    .modal .card small, .modal .card .small {
+      font-size: 1.2rem; }
+    .modal .card .circle.profiles {
+      position: absolute;
+      left: 1rem; }
+  .modal .actions {
+    margin-top: 1em; }
+  .modal .pending-confirm {
+    margin-bottom: 2em; }
+  .modal .stats {
+    text-align: center;
+    margin-bottom: 1em; }
+  .modal .stat {
+    width: 6em; }
+    .modal .stat .number {
+      background: none;
+      color: #050504;
+      line-height: 1em;
+      height: initial;
+      width: initial; }
+    .modal .stat h4 {
+      margin-top: 0; }
+  .modal form {
+    overflow: auto; }
+    .modal form .profile.image {
+      width: 8em;
+      height: 8em;
+      display: block;
+      float: left;
+      margin-right: 1em;
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative; }
+      .modal form .profile.image input, .modal form .profile.image img {
+        width: 100%;
+        height: auto; }
+    .modal form input[type="text"] {
+      width: 60%;
+      margin-bottom: 1em; }
+    .modal form .profile.image input[type="file"] {
+      display: none;
+      position: absolute;
+      -webkit-appearance: none;
+      color: rgba(255, 255, 255, 0); }
+
+.activity.cards .card {
+  padding-left: 4em; }
+
 header {
   position: fixed;
   top: 0;
@@ -586,6 +685,8 @@ nav {
 
 body.login {
   background: #374A6B; }
+  body.login .modal {
+    padding: 0; }
 
 body.detail-view {
   position: relative; }
@@ -617,9 +718,6 @@ body.detail-view {
     line-height: normal; }
   .drawer h3 {
     margin-bottom: 1em; }
-  .drawer hr {
-    border: 1px solid #DDDCDA;
-    margin: 2em 0; }
   .drawer .info .via {
     margin: 1em 0; }
     .drawer .info .via img {
