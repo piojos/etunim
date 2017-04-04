@@ -3,8 +3,10 @@
 // Header
 
 header
-	position: relative
+	position: fixed
+	top: 0
 	z-index: 100
+	width: 100%
 	height: 6em
 	padding: 2em
 	a.logo
@@ -81,24 +83,32 @@ body.detail-view
 		background: $lightblue
 
 .drawer
-	width: 33vw
+	min-width: 18em
+	width: 100
+	position: relative
 	height: 100vh
 	overflow: auto
 	background: white
 	top: 0
-	position: absolute
-	padding: 8em 2em 0 0
+	padding: 12rem 2em 0
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5)
+	@media (min-width: 550px)
+		width: 33vw
+		position: fixed
+	@media (min-width: 1440px)
+		&.left .wrap
+			// padding-left: 1em
+			margin-left: 34%
+		&.right .wrap
+			// padding-right: 1em
+			margin-right: 34%
+
 	h1
 		font-size: 2.4rem
 		margin-bottom: 1em
 		line-height: normal
 	h3
 		margin-bottom: .5em
-		span
-			color: $blue
-	&.left .wrap
-		margin-left: 34%
 	hr
 		border: 1px solid $lightgray
 		margin: 2em 0
@@ -121,22 +131,19 @@ body.detail-view
 				img
 					border: 1px dashed $gray
 	.actions
-		// position: absolute
-		// bottom: 0
-		margin-top: 2em
+		margin: 2em auto 1em
 
 	&.right
 		right: 0
-		padding: 8em 0 0 1.5em
-		.wrap
-			margin-right: 34%
+		padding: 12.7rem 2em 0 1.5em
 
 
 
 .comments
+	padding-bottom: 4em
 	.blank
-		border: 2px dashed lightgray
-		color: lightgray
+		border: 2px dashed $lightgray
+		color: $lightgray
 		padding: 1em 1.5em
 		text-align: center
 		margin-bottom: 2em
@@ -167,34 +174,40 @@ body.detail-view
 			font-weight: bold
 			span
 				font-weight: initial
-				color: lightgray
+				color: $lightgray
 				font-size: 1.2rem
 		.content
-			border: 1px solid lightgray
+			border: 1px solid $lightgray
 			padding: .5em .75em
 			border-radius: 5px
+			direction: ltr
 
-	.reply
-		background: $lightgray
-		position: absolute
-		left: 0
-		width: 100%
-		input[type="text"]
-			width: 80%
-			padding-right: 0
-			border: none
-			background: none
-		input[type="submit"]
-			padding-left: 0
-			padding-right: 0
-			float: right
-			width: 20%
-			background: none
-			border: none
+.comment.reply
+	background: $lightgray
+	bottom: 0
+	right: 0
+	width: 100%
+	@media (min-width: 550px)
+		position: fixed
+		width: 33vw
+	input[type="text"]
+		width: 80%
+		padding-right: 0
+		border: none
+		background: none
+	input[type="submit"]
+		padding-left: 0
+		padding-right: 0
+		float: right
+		width: 20%
+		background: none
+		border: none
 
 
 .middle.tasks
-	margin: 2em 34%
+	@media (min-width: 550px)
+		margin: 12.7rem 35% 2em
 	h3
-		color: white
 		margin-bottom: 1em
+	&.meeting h3
+		color: white

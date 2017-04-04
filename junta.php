@@ -42,79 +42,43 @@
 		</div>
 	</div>
 
+
+
+
 	<div class="middle tasks">
 		<h3>Pendientes (<span class="amount">2</span>)</h3>
 		<div class="cards"><?php
 			echo card('square overdue');
 			echo card('square single');
 			echo card('square done'); ?>
+
+
+				<div class="card newtask">
+					<div class="profiles">
+						<div>
+							<img src="http://placehold.it/42" alt="">
+						</div>
+					</div>
+					<form class="" action="index.html" method="post">
+						<input type="text" name="task-name" value="" placeholder="Nombre de la tarea">
+						<input type="text" name="task-name" value="" placeholder="Responsables">
+						<input type="text" name="task-name" value="" placeholder="Fecha de entrega">
+						<div class="month" style="display:none">
+							<?php include 'inc/calendar.php'; ?>
+						</div>
+						<input type="text" name="task-name" value="" placeholder="Prioridad">
+						<input type="submit" name="" value="Guardar" class="text-button">
+					</form>
+				</div>
+
+
+		</div>
+		<div class="actions" style="text-align:center;">
+			<a href="#" class="button blue">Agregar pendiente</a>
 		</div>
 	</div>
 
-
-
-
-	<div class="drawer right">
-		<div class="wrap">
-			<h3>Comentarios (<span class="amount">2</span>)</h3>
-		</div>
-		<div class="comments wrap">
-			<div class="blank">
-				No hay comentarios aún.
-			</div>
-
-			<div class="incomming message">
-				<div class="profile picture">
-					<img src="http://placehold.it/42" alt="Nombre Apellido">
-				</div>
-				<div class="data">
-					<div class="name info">
-						Nombre Apellido <span>27 febrero, a las 4:00 pm</span>
-					</div>
-					<div class="content">
-						¿Si logramos salir con prototipo para el viernes 10? <a href="#">http://google.com</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="outgoing message">
-				<div class="profile picture">
-					<img src="http://placehold.it/42" alt="Nombre Apellido">
-				</div>
-				<div class="data">
-					<div class="name info">
-						Nombre Apellido <span>27 febrero, a las 4:00 pm</span>
-					</div>
-					<div class="content">
-						¿Si logramos salir con prototipo para el viernes 10? <a href="#">http://google.com</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="incomming message">
-				<div class="profile picture">
-					<img src="http://placehold.it/42" alt="Nombre Apellido">
-				</div>
-				<div class="data">
-					<div class="name info">
-						Nombre Apellido <span>27 febrero, a las 4:00 pm</span>
-					</div>
-					<div class="content">
-						¿Si logramos salir con prototipo para el viernes 10? <a href="#">http://google.com</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="reply">
-				<form class="wrap" action="index.html" method="post">
-					<input type="text" placeholder="Escribe un comentario..." name="" value="">
-					<input class="text-button" type="submit" name="" value="Enviar">
-				</form>
-			</div>
-
-		</div>
-	</div>
-
+	<?php include 'inc/comments.php'; ?>
 
 
 </body>
