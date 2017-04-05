@@ -234,6 +234,22 @@ hr {
   overflow: hidden;
   text-overflow: ellipsis; }
 
+.priority-icon:before {
+  content: "!";
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  text-align: center;
+  margin-right: 0.5em;
+  border-radius: 50%;
+  background: #FAC24E;
+  color: white;
+  font-weight: bold;
+  line-height: 1.7em; }
+
+.priority.max:before {
+  background: #D61D37; }
+
 .modal {
   background: white;
   position: relative;
@@ -552,6 +568,8 @@ hr {
       left: 0.6em; }
   .task.title h1 {
     margin-bottom: 0; }
+.task.info {
+  line-height: 2.2em; }
 
 a.button.resolve {
   position: relative;
@@ -588,6 +606,20 @@ a.button.resolve {
     padding-left: 3.4em; }
   .modal#profile-stats {
     width: 24em; }
+  .modal#solve-task .task.info {
+    font-size: 1.4rem; }
+  .modal#solve-task .actions a.text-button {
+    float: initial;
+    margin-top: 0.9em;
+    display: inline-block; }
+  .modal#solve-task .actions a.resolve {
+    float: right; }
+  .modal textarea {
+    max-width: 100%; }
+  .modal input[type="file"] {
+    background: none;
+    padding: 1em 0;
+    border: none; }
   .modal .header {
     border-bottom: 0.2rem solid #DDDCDA;
     padding-bottom: 1rem;
@@ -626,6 +658,9 @@ a.button.resolve {
     margin-top: 1em; }
     .modal .actions.single {
       text-align: center; }
+    .modal .actions.footer {
+      border-top: 0.2rem solid #DDDCDA;
+      padding: 1.4em 0 0; }
   .modal .pending-confirm {
     margin-bottom: 2em; }
   .modal .stats {
@@ -676,9 +711,6 @@ a.button.resolve {
       margin-bottom: 0.5em; }
     .modal.create .actions .text-button {
       float: right; }
-  .modal .actions {
-    border-top: 0.2rem solid #DDDCDA;
-    padding: 1.4em 0 0; }
 
 .activity.cards .card {
   padding-left: 4em; }
@@ -900,22 +932,6 @@ body.detail-view {
 .meeting .middle.tasks h3, .meeting .middle.tasks .amount {
   color: white; }
 
-.task .drawer.left .priority:before {
-  content: "!";
-  display: inline-block;
-  width: 1.6em;
-  height: 1.6em;
-  text-align: center;
-  margin-right: 0.5em;
-  border-radius: 50%;
-  background: #FAC24E;
-  color: white;
-  font-weight: bold;
-  line-height: 1.7em; }
-.task .drawer.left .priority.max:before {
-  background: #D61D37; }
-.task .drawer.left .info {
-  line-height: 2.2em; }
 .task .drawer.left .actions {
   text-align: right; }
 .task .drawer.left .edit {

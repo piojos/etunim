@@ -113,6 +113,26 @@ hr
 	overflow: hidden
 	text-overflow: ellipsis
 
+.priority-icon:before
+	content: '!'
+	display: inline-block
+	width: 1.6em
+	height: 1.6em
+	text-align: center
+	margin-right: .5em
+	border-radius: 50%
+	background: $yellow
+	color: white
+	font-weight: bold
+	line-height: 1.7em
+
+.priority.max:before
+	background: $red
+
+
+
+
+
 
 
 
@@ -496,17 +516,20 @@ hr
 
 
 
-.task.title
-	position: relative
-	padding-left: 4em
-	margin-bottom: 2em
-	.circle.profiles
-		position: absolute
-		left: 0
-		div:nth-child(2)
-			left: 0.6em
-	h1
-		margin-bottom: 0
+.task
+	&.title
+		position: relative
+		padding-left: 4em
+		margin-bottom: 2em
+		.circle.profiles
+			position: absolute
+			left: 0
+			div:nth-child(2)
+				left: 0.6em
+		h1
+			margin-bottom: 0
+	&.info
+		line-height: 2.2em
 
 
 
@@ -567,6 +590,22 @@ a.button.resolve
 		padding-left: 3.4em
 	&#profile-stats
 		width: 24em
+	&#solve-task
+		.task.info
+			font-size: 1.4rem
+		.actions
+			a.text-button
+				float: initial
+				margin-top: .9em
+				display: inline-block
+			a.resolve
+				float: right
+	textarea
+		max-width: 100%
+	input[type="file"]
+		background: none
+		padding: 1em 0
+		border: none
 	.header
 		border-bottom: .2rem solid $lightgray
 		padding-bottom: 1rem
@@ -605,6 +644,9 @@ a.button.resolve
 		margin-top: 1em
 		&.single
 			text-align: center
+		&.footer
+			border-top: 0.2rem solid $lightgray
+			padding: 1.4em 0 0
 	.pending-confirm
 		margin-bottom: 2em
 	.stats
@@ -655,9 +697,6 @@ a.button.resolve
 			margin-bottom: .5em
 		.actions .text-button
 			float: right
-	.actions
-		border-top: 0.2rem solid $lightgray
-		padding: 1.4em 0 0
 
 .activity.cards .card
 	padding-left: 4em

@@ -159,7 +159,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row actions">
+			<div class="row actions footer">
 				<select class="" name="">
 					<option value="">Juntas Predefinididas</option>
 					<option value="">Martín Martinez</option>
@@ -178,7 +178,7 @@
 
 <div class="create modal profile" id="new-task">
 	<div class="container">
-		<h2>Crear Pendiente</h2>
+		<h2>Crear / Editar Pendiente</h2>
 		<form class="" action="index.html" method="post">
 			<div class="row">
 				<div class="one-half column">
@@ -195,10 +195,10 @@
 						<a href="#" class="bold"> B </a>
 						<a href="#" class="italic"> i </a>
 					</div>
-					<textarea name="name" rows="4" placeholder="Descripción del pendiente"></textarea>
+					<textarea name="name" rows="6" placeholder="Descripción del pendiente"></textarea>
 				</div>
 			</div>
-			<div class="row actions">
+			<div class="row actions footer">
 				<a href="#" class="text-button blue">Crear</a>
 			</div>
 		</form>
@@ -224,8 +224,8 @@
 						<h1>Definición Inicial Minute</h1>
 						<p>Responsables: <strong>Pedro López</strong></p>
 					</div>
-					<div class="info">
-						<p class="priority med"><strong>Prioridad media</strong></p>
+					<div class="task info">
+						<p class="priority-icon med"><strong>Prioridad media</strong></p>
 						<p>Entrega: <strong class="tag blue">27 febrero</strong></p>
 						<p>Etiquetas: <strong class="tag">Skype</strong> <strong class="tag">MinuteApp</strong></p>
 						<p class="ellipsis">Origen: <strong class="tag yellow">Junta de Arranque Proyecto Minute App</strong></p>
@@ -237,10 +237,11 @@
 						<a href="#" class="bold"> B </a>
 						<a href="#" class="italic"> i </a>
 					</div>
-					<textarea name="name" rows="4" placeholder="Descripción del pendiente"></textarea>
+					<textarea name="name" rows="6" placeholder="Descripción la resolución del pendiente"></textarea>
+					<input type="file" name="" value="">
 				</div>
 			</div>
-			<div class="row actions">
+			<div class="row actions footer">
 				<a href="#" class="text-button">Cancelar</a>
 				<a href="#" class="button blue resolve">Resolver</a>
 			</div>

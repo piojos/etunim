@@ -19,8 +19,8 @@
 				<h1>Definición Inicial Minute</h1>
 				<p>Responsables: <strong>Pedro López</strong></p>
 			</div>
-			<div class="info">
-				<p class="priority med"><strong>Prioridad media</strong></p>
+			<div class="task info">
+				<p class="priority-icon med"><strong>Prioridad media</strong></p>
 				<p>Entrega: <strong class="tag blue">27 febrero</strong></p>
 				<p>Etiquetas: <strong class="tag">Skype</strong> <strong class="tag">MinuteApp</strong></p>
 				<p class="ellipsis">Origen: <strong class="tag yellow">Junta de Arranque Proyecto Minute App</strong></p>
