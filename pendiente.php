@@ -23,7 +23,7 @@
 				<p class="priority med"><strong>Prioridad media</strong></p>
 				<p>Entrega: <strong class="tag blue">27 febrero</strong></p>
 				<p>Etiquetas: <strong class="tag">Skype</strong> <strong class="tag">MinuteApp</strong></p>
-				<p>Origen: <strong class="tag yellow">Junta de Arranque Proyecto Minute App</strong></p>
+				<p class="ellipsis">Origen: <strong class="tag yellow">Junta de Arranque Proyecto Minute App</strong></p>
 				<hr>
 			</div>
 			<div class="description">

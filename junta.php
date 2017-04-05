@@ -11,7 +11,7 @@
 			<div class="info">
 				<p class="tag date"><strong>27 febrero</strong>, a las <strong>4:00 pm</strong></p>
 				<p class="via"><img src="http://placehold.it/24" alt=""> <strong>Via Skype</strong></p>
-				<div class="profiles">
+				<div class="attending profiles">
 					<h3>Participantes</h3>
 					<a href="#" data-tooltip-content="Nombre Apellido">
 						<img src="http://placehold.it/42" alt="Nombre Apellido">
@@ -54,7 +54,7 @@
 
 
 				<div class="card newtask">
-					<div class="profiles">
+					<div class="circle profiles">
 						<div>
 							<img src="http://placehold.it/42" alt="">
 						</div>
