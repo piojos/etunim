@@ -9,7 +9,7 @@
 				<div class="search">
 					<form class="" action="#" method="post">
 						<input type="text" placeholder="Busca una junta" name="" value="">
-						<button type="button" name="button"><img src="http://placehold.it/24" alt=""></button>
+						<button type="button" name="button"><img src="img/ic-search.svg" alt=""></button>
 					</form>
 				</div>
 

@@ -9,7 +9,7 @@
 			<div class="three columns sidebar searchable">
 				<div class="search">
 					<input type="text" placeholder="Busca una junta" name="" value="">
-					<button type="button" name="button"><img src="http://placehold.it/24" alt=""></button>
+					<button type="button" name="button"><img src="img/ic-search.svg" alt=""></button>
 				</div>
 				<h2>Proximas Juntas</h2>
 				<ul>

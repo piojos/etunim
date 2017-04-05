@@ -39,11 +39,11 @@
 			</div>
 			<div class="icons">
 				<div>
-					<img src="http://placehold.it/18" alt="">
+					<img src="img/ic-todos.svg" alt="">
 					<span>0 / 2</span>
 				</div>
 				<div>
-					<img src="http://placehold.it/18" alt="">
+					<img src="img/ic-comments.svg" alt="">
 					<span>3</span>
 				</div>
 			</div>

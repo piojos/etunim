@@ -10,9 +10,9 @@
 					<ul>
 						<li class="calendar">
 							<div class="title">
-								<a href="#" class="nav prev">&lt;</a>
+								<a href="#" class="nav prev"><img src="img/ic-arr.svg" alt="Previous Month"></a>
 								<a href="#">Abril 2017</a>
-								<a href="#" class="nav next">&gt;</a>
+								<a href="#" class="nav next"><img src="img/ic-arr.svg" alt="Next Month"></a>
 							</div>
 							<div class="month" style="display:none">
 								<?php include 'inc/calendar.php'; ?>
@@ -21,7 +21,7 @@
 						<li class="search">
 							<div>
 								<input type="text" placeholder="Busca un pendiente" name="" value="">
-								<button type="button" name="button"><img src="http://placehold.it/24" alt=""></button>
+								<button type="button" name="button"><img src="img/ic-search.svg" alt=""></button>
 							</div>
 						</li>
 						<li>
@@ -66,7 +66,10 @@
 							</div>
 						</li>
 						<li>
-							<input type="radio" name="showdone" value="showdone"> <label for="showdone">Mostrar Resueltos</label>
+							<div class="tick-button">
+								<input type="checkbox" name="showdone" id="showdone" value="showdone">
+								<label for="showdone">Mostrar Resueltos</label>
+							</div>
 						</li>
 					</ul>
 				</form>

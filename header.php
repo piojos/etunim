@@ -38,14 +38,20 @@
 		}
 	?>">
 		<div class="container">
-			<a href="#" class="logo"><img src="http://placehold.it/170x40" alt=""></a>
+			<a href="#" class="logo"><img src="<?php
+			if(strpos($headClass, 'yellow')) {
+				echo 'img/logo-black.svg';
+			} else {
+				echo 'img/logo-white.svg';
+			}
+			?>" alt=""></a>
 			<nav>
 				<a href="index.php" class="current">Inicio</a>
 				<a href="pendientes.php">Pendientes</a>
 				<a href="juntas.php">Juntas</a>
 				<a href="etiquetas.php">Etiquetas</a>
-				<a href="#" class="profile"><img src="http://placehold.it/44" alt=""></a>
-				<a href="#"><img src="http://placehold.it/44" alt=""><span class="alert">1</span></a>
+				<a href="#" class="profile"><img src="http://lorempixel.com/44/44/people" alt=""></a>
+				<a href="#"><img src="img/ic-bell.svg" alt=""><span class="alert">1</span></a>
 			</nav>
 		</div>
 	</header>
