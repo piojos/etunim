@@ -194,10 +194,41 @@ select {
   border: none;
   outline: none; }
 
+.tick-button {
+  position: relative; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  position: relative;
+  -webkit-appearance: none;
+  background: none;
+  border: 0.2rem solid;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  vertical-align: text-bottom;
+  margin-right: 0.2em; }
+  input[type="checkbox"]:checked + label:before,
+  input[type="radio"]:checked + label:before {
+    content: "";
+    display: inline-block;
+    background: #050504;
+    border-radius: 4px;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 0.5rem; }
+
+input[type="radio"] {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
 .dropdown {
   position: relative; }
   .dropdown:after {
-    content: ">";
+    content: url("../img/ic-arr.svg");
     display: block;
     position: absolute;
     top: 0;
@@ -245,7 +276,8 @@ hr {
   background: #FAC24E;
   color: white;
   font-weight: bold;
-  line-height: 1.7em; }
+  line-height: 1.7em;
+  -webkit-font-smoothing: antialiased; }
 
 .priority.max:before {
   background: #D61D37; }
@@ -357,8 +389,12 @@ hr {
         z-index: 2; }
         .sidebar.filter .calendar .title a:nth-child(1) {
           float: left; }
+          .sidebar.filter .calendar .title a:nth-child(1) img {
+            transform: rotate(90deg); }
         .sidebar.filter .calendar .title a:last-child {
           float: right; }
+          .sidebar.filter .calendar .title a:last-child img {
+            transform: rotate(-90deg); }
     .sidebar.filter select {
       width: 100%; }
     .sidebar.filter .actions {
@@ -478,7 +514,8 @@ hr {
   .card .icons {
     width: 20%; }
     .card .icons img {
-      vertical-align: text-bottom; }
+      vertical-align: bottom;
+      margin-right: 0.2em; }
     .card .icons > div {
       display: inline-block;
       margin-right: 1rem; }
@@ -807,14 +844,19 @@ nav {
   nav .alert {
     position: absolute;
     background: #D61D37;
-    width: 1.5em;
+    width: 2em;
+    height: 2em;
+    padding-top: 0.2em;
     font-size: 0.75em;
-    height: 1.5em;
     text-align: center;
     border-radius: 50%;
     right: -1em;
     top: 2em;
     color: white; }
+  nav .profile img {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
 
 body.login {
   background: #374A6B; }

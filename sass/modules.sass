@@ -73,10 +73,49 @@ select
 	border: none
 	outline: none
 
+// input[type="radio"]:after {
+//     content: '\00a0'
+//     width: 1rem
+//     background: black
+//     height: 1rem
+//     display: inline-block
+//     border-radius: 50%
+//     position: relative
+//     top: .3rem
+
+.tick-button
+	position: relative
+
+input[type="checkbox"],
+input[type="radio"]
+	position: relative
+	-webkit-appearance: none
+	background: none
+	border: .2rem solid
+	width: 2rem
+	height: 2rem
+	text-align: center
+	vertical-align: text-bottom
+	margin-right: .2em
+	&:checked + label:before
+		content: ''
+		display: inline-block
+		background: $black
+		border-radius: 4px
+		width: 1rem
+		height: 1rem
+		position: absolute
+		top: .7rem
+		left: .5rem
+
+input[type="radio"]
+	+border-radius(50%)
+
+
 .dropdown
 	position: relative
 	&:after
-		content: '>'
+		content: url('../img/ic-arr.svg')
 		display: block
 		position: absolute
 		top: 0
@@ -125,6 +164,7 @@ hr
 	color: white
 	font-weight: bold
 	line-height: 1.7em
+	-webkit-font-smoothing: antialiased
 
 .priority.max:before
 	background: $red
@@ -254,8 +294,12 @@ hr
 				z-index: 2
 				a:nth-child(1)
 					float: left
+					img
+						transform: rotate(90deg)
 				a:last-child
 					float: right
+					img
+						transform: rotate(-90deg)
 		select
 			width: 100%
 		.actions
@@ -412,7 +456,8 @@ hr
 	.icons
 		width: 20%
 		img
-			vertical-align: text-bottom
+			vertical-align: bottom
+			margin-right: .2em
 		> div
 			display: inline-block
 			margin-right: 1rem
