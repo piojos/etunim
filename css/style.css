@@ -74,6 +74,17 @@ body {
   float: left;
   box-sizing: border-box; }
 
+/* Clearing */
+.row {
+  overflow: auto; }
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
@@ -97,6 +108,9 @@ body {
 
   .nine.columns {
     width: 74%; }
+
+  .one-half.column {
+    width: 48%; }
 
   /* Offsets */ }
 a {
@@ -147,7 +161,8 @@ button,
 input,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+textarea {
   display: inline-block;
   padding: 1em;
   text-decoration: none;
@@ -163,7 +178,9 @@ input[type="button"] {
   input[type="reset"]:active,
   input[type="reset"]:focus,
   input[type="button"]:active,
-  input[type="button"]:focus {
+  input[type="button"]:focus,
+  textarea:active,
+  textarea:focus {
     border-color: #DDDCDA;
     outline: none; }
 
@@ -209,6 +226,13 @@ p.tag {
 hr {
   border: 1px solid #DDDCDA;
   margin: 2em 0; }
+
+.ellipsis, .card .incharge,
+.card .deliver {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .modal {
   background: white;
@@ -275,7 +299,7 @@ hr {
       padding-bottom: 1em;
       border-bottom: none; }
   .sidebar .search {
-    padding: 0;
+    padding: 0 !important;
     position: relative; }
     .sidebar .search input {
       background: none;
@@ -393,6 +417,21 @@ hr {
     left: 1.6em;
     z-index: 1; }
 
+.attending.profiles {
+  margin-bottom: 1em;
+  overflow: auto; }
+  .attending.profiles a {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 5em; }
+  .attending.profiles img {
+    border-radius: 50%; }
+  .attending.profiles .add {
+    color: #C0BCBB; }
+    .attending.profiles .add img {
+      border: 1px dashed #C0BCBB; }
+
 .cards .card {
   margin-bottom: 1em; }
 
@@ -426,12 +465,6 @@ hr {
       margin-right: 1rem; }
       .card .icons > div:last-child {
         margin-right: 0; }
-  .card .incharge,
-  .card .deliver {
-    white-space: nowrap;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis; }
   .card .checkbox {
     width: 10%;
     text-align: right;
@@ -547,6 +580,8 @@ a.button.resolve {
 .modal {
   z-index: 201;
   padding: 1.4rem 2rem; }
+  .modal.tooltip {
+    border-radius: 0.5rem; }
   .modal#notifications {
     width: 40rem; }
   .modal#profile-stats .header {
@@ -589,6 +624,8 @@ a.button.resolve {
       left: 1rem; }
   .modal .actions {
     margin-top: 1em; }
+    .modal .actions.single {
+      text-align: center; }
   .modal .pending-confirm {
     margin-bottom: 2em; }
   .modal .stats {
@@ -626,9 +663,70 @@ a.button.resolve {
       position: absolute;
       -webkit-appearance: none;
       color: rgba(255, 255, 255, 0); }
+  .modal.create {
+    min-width: 86rem; }
+    .modal.create h3 {
+      margin-bottom: 0.5em; }
+    .modal.create .container {
+      min-width: initial;
+      margin-top: 1em;
+      margin-bottom: 1em; }
+    .modal.create input[type="text"], .modal.create textarea {
+      width: 100%;
+      margin-bottom: 0.5em; }
+    .modal.create .actions .text-button {
+      float: right; }
+  .modal .actions {
+    border-top: 0.2rem solid #DDDCDA;
+    padding: 1.4em 0 0; }
 
 .activity.cards .card {
   padding-left: 4em; }
+
+.search.invite {
+  position: relative;
+  background: #EDEDED;
+  border-radius: 5px; }
+  .search.invite.active {
+    border: 0.1rem solid #DDDCDA; }
+  .search.invite input {
+    border: none;
+    background: none;
+    border-bottom: 0.1rem solid #DDDCDA;
+    border-radius: 0; }
+  .search.invite input[type="text"] {
+    margin-bottom: 1.2em; }
+  .search.invite button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none; }
+  .search.invite .results.no-match {
+    text-align: center;
+    margin: 0.5em 0 1.75em; }
+    .search.invite .results.no-match a img {
+      border-radius: 50%;
+      vertical-align: middle;
+      position: relative;
+      left: -0.5em; }
+
+.wysiwyg.button-tray {
+  background: #DDDCDA;
+  display: inline-block;
+  border-radius: 0.5rem;
+  letter-spacing: 0;
+  margin-bottom: 0.5em; }
+  .wysiwyg.button-tray > a {
+    padding: 0.5em 1em;
+    display: inline-block;
+    border-right: 0.1rem solid white; }
+    .wysiwyg.button-tray > a:last-child {
+      border: none; }
+    .wysiwyg.button-tray > a.bold {
+      font-weight: bold; }
+    .wysiwyg.button-tray > a.italic {
+      font-style: oblique; }
 
 header {
   position: fixed;
@@ -723,17 +821,6 @@ body.detail-view {
     .drawer .info .via img {
       vertical-align: middle;
       margin-right: 0.5em; }
-  .drawer .info .profiles a {
-    display: inline-block;
-    text-align: center;
-    font-size: 1.2rem;
-    width: 5em; }
-  .drawer .info .profiles img {
-    border-radius: 50%; }
-  .drawer .info .profiles .add {
-    color: #C0BCBB; }
-    .drawer .info .profiles .add img {
-      border: 1px dashed #C0BCBB; }
   .drawer .actions {
     margin: 2em auto 1em; }
   .drawer.right {
