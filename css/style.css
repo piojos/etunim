@@ -63,7 +63,6 @@ body {
 .container {
   position: relative;
   width: 100%;
-  min-width: 840px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -93,7 +92,8 @@ body {
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 80%;
+    min-width: 840px; }
 
   .column,
   .columns {
@@ -450,6 +450,9 @@ hr {
 
 .cards .card {
   margin-bottom: 1em; }
+.cards.task a.button {
+  font-size: 1.4rem;
+  padding: 0.65em 1.2em 0.6em; }
 
 .card {
   border-radius: 0.5rem;
