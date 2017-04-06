@@ -829,9 +829,52 @@ header {
     background: #1F80A6; }
   header nav {
     display: none; }
+    header nav img.mo, header nav img.dt {
+      display: none; }
     @media (min-width: 550px) {
       header nav {
-        display: block; } }
+        display: block; }
+        header nav img.dt {
+          display: inline-block; } }
+    @media (max-width: 550px) {
+      header nav {
+        background: white;
+        box-shadow: 0 0 4px;
+        padding: 2em 1em 1em;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0; }
+        header nav:before {
+          content: url("../img/logo-black.svg");
+          margin: auto;
+          width: 17rem;
+          display: block;
+          margin-bottom: 1em; }
+        header nav a {
+          width: 90%;
+          padding: 0;
+          top: 0;
+          height: inherit;
+          font-size: 1.2em; }
+          header nav a.current {
+            border: none; }
+          header nav a:nth-last-child(-n+2) {
+            width: 50%;
+            float: left;
+            margin: 0;
+            text-align: center;
+            padding: 1em 0 0;
+            border-top: 1px solid #EDEDED;
+            margin-top: 1em; }
+        header nav .alert {
+          top: 1em;
+          right: initial;
+          left: 50%; }
+        header nav img {
+          margin-top: initial; }
+          header nav img.mo {
+            display: inline-block; } }
 
 nav {
   float: right; }
@@ -1021,12 +1064,15 @@ body.detail-view {
     background: #0C7BD5;
     text-align: center;
     border-radius: 50%; }
+.mobile.detail-view.meeting h3.tab::after {
+  background: #FAC24E; }
 .mobile.detail-view .drawer.left {
   box-shadow: none;
   padding: 12rem 1.5em 1em; }
 .mobile.detail-view > .actions {
   background: white;
-  padding: 1em 1.5em; }
+  padding: 1em 1.5em;
+  overflow: auto; }
 .mobile.detail-view .under {
   padding: 1em 1.5em;
   position: relative;
@@ -1036,6 +1082,8 @@ body.detail-view {
     .mobile.detail-view .under.comments .drawer {
       box-shadow: inset 0 0px 0.6rem 0 rgba(0, 0, 0, 0.2);
       padding: 0; }
+  .mobile.detail-view .under.comments .drawer, .mobile.detail-view .under.description {
+    background: #F9F9F9; }
   .mobile.detail-view .under h3 {
     display: none; }
 .mobile.detail-view .comments.wrap {

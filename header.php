@@ -39,7 +39,7 @@
 	?>">
 		<div class="container">
 			<a href="#" class="logo"><img src="<?php
-			if(strpos($headClass, 'yellow')) {
+			if(strpos($headClass, 'yellow') !== false) {
 				echo 'img/logo-black.svg';
 			} else {
 				echo 'img/logo-white.svg';
@@ -51,7 +51,17 @@
 				<a href="juntas.php">Juntas</a>
 				<a href="etiquetas.php">Etiquetas</a>
 				<a href="#" class="profile"><img src="http://lorempixel.com/44/44/people" alt=""></a>
-				<a href="#"><img src="img/ic-bell.svg" alt=""><span class="alert">1</span></a>
+				<a href="#" class="notifications">
+					<img src="<?php
+					if(strpos($headClass, 'yellow') !== false) {
+						echo 'img/ic-bell-black.svg';
+					} else {
+						echo 'img/ic-bell.svg';
+					}
+					?>" alt="" class="dt">
+					<img src="img/ic-bell-black.svg" alt="" class="mo">
+					<span class="alert">1</span>
+				</a>
 			</nav>
 		</div>
 	</header>

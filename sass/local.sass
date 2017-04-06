@@ -28,8 +28,55 @@ header
 		background: $teal
 	nav
 		display: none
+		img.mo, img.dt
+			display: none
 		@media (min-width: 550px)
 			display: block
+			img.dt
+				display: inline-block
+		@media (max-width: 550px)
+			background: white
+			box-shadow: 0 0 4px
+			padding: 2em 1em 1em
+			position: fixed
+			width: 100%
+			top: 0
+			left: 0
+			&:before
+				content: url('../img/logo-black.svg')
+				margin: auto
+				width: 17rem
+				display: block
+				margin-bottom: 1em
+			a
+				width: 90%
+				padding: 0
+				top: 0
+				height: inherit
+				font-size: 1.2em
+				&.current
+					border: none
+				&:nth-last-child(-n+2)
+					width: 50%
+					float: left
+					margin: 0
+					text-align: center
+					padding: 1em 0 0
+					border-top: 1px solid $whitegray
+					margin-top: 1em
+			.alert
+				top: 1em
+				right: initial
+				left: 50%
+			img
+				margin-top: initial
+				&.mo
+					display: inline-block
+
+
+
+
+
 
 nav
 	float: right
@@ -254,12 +301,15 @@ body.detail-view
 			background: $blue
 			text-align: center
 			border-radius: 50%
+	&.meeting h3.tab::after
+		background: $yellow
 	.drawer.left
 		box-shadow: none
 		padding: 12rem 1.5em 1em
 	> .actions
 		background: white
 		padding: 1em 1.5em
+		overflow: auto
 	.under
 		padding: 1em 1.5em
 		position: relative
@@ -269,6 +319,8 @@ body.detail-view
 			.drawer
 				box-shadow: inset 0 0px 0.6rem 0 rgba(0, 0, 0, 0.2)
 				padding: 0
+		&.comments .drawer, &.description
+			background: #F9F9F9
 		h3
 			display: none
 	.comments.wrap
