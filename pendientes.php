@@ -5,7 +5,7 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="three columns sidebar filter">
+			<div class="three columns sidebar filter" style="display:none">
 				<form class="" action="#" method="post">
 					<ul>
 						<li class="calendar">

@@ -391,6 +391,8 @@ hr
 		height: 4.2rem
 		border: 2px solid white
 		z-index: 2
+		@media (max-width: 550px)
+			margin-left: -.4em
 	& div:nth-child(2)
 		opacity: .5
 		left: 1.6em
@@ -470,7 +472,7 @@ hr
 	.checkbox
 		width: 10%
 		text-align: right
-		padding-right: 1em
+		padding: 1em 0 0
 		position: absolute
 		right: 2rem
 		.square
@@ -512,7 +514,6 @@ hr
 			background: $yellow
 
 	&.square
-		// min-height: 10em
 		padding-bottom: 1em
 		.title
 			width: 70%
@@ -521,6 +522,27 @@ hr
 		.details, .icons
 			margin-left: 14%
 			width: 80%
+
+	@media (max-width: 550px)
+		padding-bottom: 1em
+		.title
+			width: 70%
+		.profiles
+			width: 14%
+		.details, .icons
+			margin-left: 14%
+			width: 80%
+
+
+	@media (max-width: 400px)
+		&.done
+			.title, .details, .icons
+				padding-left: 4rem
+		.details, .icons
+			margin-left: 0
+		.profiles
+			display: none
+
 
 	&.newtask
 		.profiles
