@@ -14,6 +14,8 @@ header
 		padding: 2em 0
 	a.logo
 		float: left
+		@media (max-width: 550px)
+			display: none
 	&.common
 		background: $oxford
 	&.blue
@@ -54,6 +56,7 @@ header
 				top: 0
 				height: inherit
 				font-size: 1.2em
+				color: $darkbrown
 				&.current
 					border: none
 				&:nth-last-child(-n+2)
@@ -73,9 +76,50 @@ header
 				&.mo
 					display: inline-block
 
+	a.mobile-button
+		width: 1.8rem
+		height: 1.4rem
+		float: left
+		position: relative
+		&.back
+			transform: rotate(90deg)
+			margin-top: .4em
+		@media (min-width: 550px)
+			display: none
+	a.menu-toggle
+		border: .2rem solid white
+		border-left: none
+		border-right: none
+		float: right
+		margin-top: .6em
+		hr
+			margin: 0
+			margin-top: 0.4rem
+			border-color: white
+		.has-alert
+			background: $red
+			width: .8rem
+			height: .8rem
+			border-radius: 50%
+			position: absolute
+			top: -.4em
+			right: -.25em
 
+	.mobile.breadcrumbs
+		position: absolute
+		width: 80%
+		margin: 0.2rem 0 0 8%
+		color: white
+		font-size: 1.2em
+		text-align: center
+		@media (min-width: 550px)
+			display: none
 
-
+	&.open-menu
+		nav
+			display: block
+		a.mobile-button.menu-toggle, a hr
+			border-color: black
 
 
 nav

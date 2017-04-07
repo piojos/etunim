@@ -815,6 +815,9 @@ header {
       padding: 2em 0; } }
   header a.logo {
     float: left; }
+    @media (max-width: 550px) {
+      header a.logo {
+        display: none; } }
   header.common {
     background: #374A6B; }
   header.blue {
@@ -856,7 +859,8 @@ header {
           padding: 0;
           top: 0;
           height: inherit;
-          font-size: 1.2em; }
+          font-size: 1.2em;
+          color: #3E3B30; }
           header nav a.current {
             border: none; }
           header nav a:nth-last-child(-n+2) {
@@ -875,6 +879,49 @@ header {
           margin-top: initial; }
           header nav img.mo {
             display: inline-block; } }
+  header a.mobile-button {
+    width: 1.8rem;
+    height: 1.4rem;
+    float: left;
+    position: relative; }
+    header a.mobile-button.back {
+      transform: rotate(90deg);
+      margin-top: 0.4em; }
+    @media (min-width: 550px) {
+      header a.mobile-button {
+        display: none; } }
+  header a.menu-toggle {
+    border: 0.2rem solid white;
+    border-left: none;
+    border-right: none;
+    float: right;
+    margin-top: 0.6em; }
+    header a.menu-toggle hr {
+      margin: 0;
+      margin-top: 0.4rem;
+      border-color: white; }
+    header a.menu-toggle .has-alert {
+      background: #D61D37;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      position: absolute;
+      top: -0.4em;
+      right: -0.25em; }
+  header .mobile.breadcrumbs {
+    position: absolute;
+    width: 80%;
+    margin: 0.2rem 0 0 8%;
+    color: white;
+    font-size: 1.2em;
+    text-align: center; }
+    @media (min-width: 550px) {
+      header .mobile.breadcrumbs {
+        display: none; } }
+  header.open-menu nav {
+    display: block; }
+  header.open-menu a.mobile-button.menu-toggle, header.open-menu a hr {
+    border-color: black; }
 
 nav {
   float: right; }
