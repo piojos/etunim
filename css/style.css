@@ -240,15 +240,37 @@ input[type="radio"] {
   background: #1F80A6;
   padding: 0.1em 0.5em 0.2em;
   border-radius: 5px;
-  color: white; }
+  color: white;
+  position: relative; }
+  .tag.red {
+    background: #D61D37; }
   .tag.blue {
     background: #0C7BD5; }
   .tag.yellow {
     background: #FAC24E;
     color: #3E3B30; }
-
-p.tag {
-  display: inline-block; }
+  .tagp, .tagdiv {
+    display: inline-block; }
+  .tag.solved {
+    display: inline-block;
+    background: #9AD102;
+    color: white;
+    font-weight: bold;
+    padding: 0.4em 2em 0.4em 0.6em;
+    margin-bottom: 2em; }
+    .tag.solved:before {
+      content: "";
+      background: white;
+      width: 1.4em;
+      height: 1.4em;
+      display: block;
+      position: absolute;
+      border-radius: 0.5rem;
+      top: 0.6em; }
+    .tag.solved img {
+      position: relative;
+      vertical-align: text-bottom;
+      margin: 0.1em 0.5em 0 0; }
 
 .text-button {
   text-transform: uppercase;
@@ -632,6 +654,10 @@ hr {
     margin-bottom: 0; }
 .task.info {
   line-height: 2.2em; }
+.task.description .due {
+  color: #DDDCDA; }
+.task.description .delivered {
+  color: #0C7BD5; }
 
 a.button.resolve {
   position: relative;

@@ -126,15 +126,39 @@ input[type="radio"]
 	padding: .1em .5em .2em
 	border-radius: 5px
 	color: white
-	// &.red
-	// 	background: $yellow
+	position: relative
+	&.red
+		background: $red
 	&.blue
 		background: $blue
 	&.yellow
 		background: $yellow
 		color: $darkbrown
-p.tag
-	display: inline-block
+	&p, &div
+		display: inline-block
+	&.solved
+		display: inline-block
+		background: $green
+		color: white
+		font-weight: bold
+		padding: .4em 2em .4em .6em
+		margin-bottom: 2em
+		&:before
+			content: ''
+			background: white
+			width: 1.4em
+			height: 1.4em
+			display: block
+			position: absolute
+			border-radius: $radius
+			top: .6em
+		img
+			position: relative
+			vertical-align: text-bottom
+			margin: .1em .5em 0 0
+
+
+
 
 .text-button
 	text-transform: uppercase
@@ -598,7 +622,11 @@ hr
 			margin-bottom: 0
 	&.info
 		line-height: 2.2em
-
+	&.description
+		.due
+			color: $lightgray
+		.delivered
+			color: $blue
 
 
 
