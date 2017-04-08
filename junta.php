@@ -78,7 +78,7 @@
 		</div>
 	</div>
 
-	<?php include 'inc/comments.php'; ?>
+	<?php comments(); ?>
 
 
 </body>

@@ -79,7 +79,7 @@
 
 	<h3 class="tab">Comentarios (<span class="amount">2</span>)</h3>
 	<div class="under comments">
-		<?php include 'inc/comments.php'; ?>
+		<?php comments(); ?>
 	</div>
 
 
