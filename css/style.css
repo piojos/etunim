@@ -572,6 +572,13 @@ hr {
     background: #9AD102; }
     .card.done:before .checkbox .square {
       border-color: #9AD102; }
+  .card.done .checkbox .square {
+    border-color: #9AD102; }
+    .card.done .checkbox .square:before {
+      content: url("../img/ic-task-done.svg");
+      position: relative;
+      left: 0.25em;
+      top: -0.1em; }
   .card:before {
     content: "";
     position: absolute;
