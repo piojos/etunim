@@ -3,24 +3,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="22px" height="22px" viewBox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve">
-<g>
-	<defs>
-		<path id="SVGID_1_" d="M13.58,4.497c-0.736,0-1,0.42-1,0.998v2.004h3.105l-0.367,3.525H12.58v9.848H8.421v-9.848H6.315V7.499
-			h2.106V5.495c0-2.367,0.789-4.262,4.159-4.367h3.104v3.369H13.58z"/>
-	</defs>
-	<use xlink:href="#SVGID_1_"  overflow="visible" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF"/>
-	<clipPath id="SVGID_2_">
-		<use xlink:href="#SVGID_1_"  overflow="visible"/>
-	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		<defs>
-			<rect id="SVGID_3_" x="-448.685" y="-322.872" width="1200" height="800"/>
-		</defs>
-		<use xlink:href="#SVGID_3_"  overflow="visible" fill="#FFFFFF"/>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
-		</clipPath>
-		<rect x="1.315" y="-3.872" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="19.371" height="29.744"/>
-	</g>
-</g>
+<path fill="#FFFFFF" d="M13.58,4.497c-0.736,0-1,0.42-1,0.998v2.004h3.105l-0.367,3.525H12.58v9.848H8.421v-9.848H6.315V7.499h2.106
+	V5.495c0-2.367,0.789-4.262,4.159-4.367h3.104v3.369H13.58z"/>
 </svg>
