@@ -64,7 +64,7 @@
 				<a href="pendientes.php">Pendientes</a>
 				<a href="juntas.php">Juntas</a>
 				<a href="etiquetas.php">Etiquetas</a>
-				<a href="#" class="profile"><img src="http://lorempixel.com/44/44/people" alt=""></a>
+				<a href="#" class="profile"><img src="<?php echo profile('white'); ?>" alt=""></a>
 				<a href="#" class="notifications">
 					<img src="<?php
 					if(strpos($headClass, 'yellow') !== false) {

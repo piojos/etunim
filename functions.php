@@ -1,6 +1,22 @@
 <?php
 
 
+	// Profile placeholders
+
+	function profile($color = '') {
+		if($color AND $color == 'white') {
+			return 'img/profile-white.svg';
+		} else if($color AND $color == 'yellow') {
+			return 'img/profile-yellow.svg';
+		} else {
+			return 'img/profile-neutral.svg';
+		}
+	}
+
+
+
+
+
 	// FUNCTIONS
 
 	function card($status = array()) { ?>
@@ -14,12 +30,12 @@
 			<?php if(!strpos($status, 'meeting')) { ?>
 			<div class="circle profiles">
 				<div>
-					<img src="http://placehold.it/42" alt="">
+					<img src="<?php echo profile(); ?>" alt="">
 				</div>
 				<?php if(!strpos($status, 'single')) {
 					echo '
 					<div>
-						<img src="http://placehold.it/42" alt="">
+						<img src="'.profile().'" alt="">
 					</div>';
 				} ?>
 			</div>
@@ -59,6 +75,11 @@
 	}
 
 
+
+
+
+	// COMMENTS
+
 	function comments($status) { ?>
 		<div class="drawer right">
 			<div class="wrap">
@@ -73,7 +94,7 @@
 
 				<div class="incomming message">
 					<div class="profile picture">
-						<img src="http://placehold.it/42" alt="Nombre Apellido">
+						<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 					</div>
 					<div class="data">
 						<div class="name info">
@@ -87,7 +108,7 @@
 
 				<div class="outgoing message">
 					<div class="profile picture">
-						<img src="http://placehold.it/42" alt="Nombre Apellido">
+						<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 					</div>
 					<div class="data">
 						<div class="name info">
@@ -101,7 +122,7 @@
 
 				<div class="incomming message">
 					<div class="profile picture">
-						<img src="http://placehold.it/42" alt="Nombre Apellido">
+						<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 					</div>
 					<div class="data">
 						<div class="name info">
@@ -130,5 +151,8 @@
 			</div>
 		</div><?php
 	}
+
+
+
 
 ?>

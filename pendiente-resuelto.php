@@ -13,10 +13,10 @@
 			<div class="task title">
 				<div class="circle profiles">
 					<div>
-						<img src="http://placehold.it/42" alt="">
+						<img src="<?php echo profile(); ?>" alt="">
 					</div>
 					<div>
-						<img src="http://placehold.it/42" alt="">
+						<img src="<?php echo profile(); ?>" alt="">
 					</div>
 				</div>
 				<h1>Definición Inicial Minute</h1>

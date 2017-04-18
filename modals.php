@@ -32,7 +32,7 @@
 		<ul class="activity cards">
 			<li class="card">
 				<div class="circle profiles">
-					<div><img src="http://placehold.it/42" alt=""></div>
+					<div><img src="<?php echo profile(); ?>" alt=""></div>
 				</div>
 				<div class="info">
 					<p>Pedro López te invitó a la junta Junta de Arranque Proyecto Minute App</p>
@@ -41,7 +41,7 @@
 			</li>
 			<li class="card">
 				<div class="circle profiles">
-					<div><img src="http://placehold.it/42" alt=""></div>
+					<div><img src="<?php echo profile(); ?>" alt=""></div>
 				</div>
 				<div class="info">
 					<p>Pedro López terminó la tarea Agendar Presentación de Prototipo en Definición Inicial Minute</p>
@@ -50,7 +50,7 @@
 			</li>
 			<li class="card">
 				<div class="circle profiles">
-					<div><img src="http://placehold.it/42" alt=""></div>
+					<div><img src="<?php echo profile(); ?>" alt=""></div>
 				</div>
 				<div class="info">
 					<p>Daniel Miranda comentó en Definición Inicial Minute</p>
@@ -72,7 +72,7 @@
 	<form class="" action="" method="post">
 		<div class="profile image">
 			<input type="file" name="" value="choose...">
-			<img src="http://placehold.it/300" alt="">
+			<img src="<?php echo profile(); ?>" alt="">
 		</div>
 		<input type="text" name="" value="Francisco Martinez">
 		<input type="text" name="" value="paco@martinez.mx">
@@ -92,7 +92,7 @@
 	<div class="header">
 		<div class="circle profiles">
 			<div>
-				<img src="http://placehold.it/42" alt="">
+				<img src="<?php echo profile(); ?>" alt="">
 			</div>
 		</div>
 		<h3><strong>Nombre</strong> Apellido</h3>
@@ -125,34 +125,34 @@
 					<h3>Participantes</h3>
 					<div class="attending profiles">
 						<a href="#" data-tooltip-content="Nombre Apellido">
-							<img src="http://placehold.it/42" alt="Nombre Apellido">
+							<img src="<?php echo profile('yellow'); ?>" alt="Nombre Apellido">
 							<h4>Tú</h4>
 						</a>
 						<a href="#" data-tooltip-content="Nombre Apellido">
-							<img src="http://placehold.it/42" alt="Nombre Apellido">
+							<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 							<h4>Nombre</h4>
 						</a>
 					</div>
 					<div class="search invite active">
 						<form class="" action="#" method="post">
 							<input type="text" placeholder="Busca por nombre o correo" name="" value="">
-							<button type="button" name="button"><img src="http://placehold.it/24" alt=""></button>
+							<button type="button" name="button"><img src="img/ic-search.svg" alt=""></button>
 						</form>
 						<div class="results" style="display:none">
 							<div class="attending profiles">
 								<a href="#" data-tooltip-content="Nombre Apellido">
-									<img src="http://placehold.it/42" alt="Nombre Apellido">
+									<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 									<h4>Tú</h4>
 								</a>
 								<a href="#" data-tooltip-content="Nombre Apellido">
-									<img src="http://placehold.it/42" alt="Nombre Apellido">
+									<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 									<h4>Nombre</h4>
 								</a>
 							</div>
 						</div>
 						<div class="results no-match">
 							<a href="#">
-								<img src="http://placehold.it/42" alt="Nombre Apellido">
+								<img src="<?php echo profile('white'); ?>" alt="Nombre Apellido">
 								<span>Invitar a <strong>Minute app</strong></span>
 							</a>
 						</div>
@@ -215,10 +215,10 @@
 					<div class="task title">
 						<div class="circle profiles">
 							<div>
-								<img src="http://placehold.it/42" alt="">
+								<img src="<?php echo profile(); ?>" alt="">
 							</div>
 							<div>
-								<img src="http://placehold.it/42" alt="">
+								<img src="<?php echo profile(); ?>" alt="">
 							</div>
 						</div>
 						<h1>Definición Inicial Minute</h1>

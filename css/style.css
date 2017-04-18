@@ -505,7 +505,9 @@ hr {
     font-size: 1.2rem;
     width: 5em; }
   .attending.profiles img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 3em;
+    height: auto; }
   .attending.profiles .add {
     color: #C0BCBB; }
     .attending.profiles .add img {
@@ -836,7 +838,9 @@ a.button.resolve {
       border-radius: 50%;
       vertical-align: middle;
       position: relative;
-      left: -0.5em; }
+      left: -0.5em;
+      width: 3em;
+      border: 1px dashed #C0BCBB; }
 
 .wysiwyg.button-tray {
   background: #DDDCDA;
@@ -1010,7 +1014,9 @@ nav {
   nav .profile img {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 4.6rem;
+    height: auto; }
 
 body.login {
   background: #374A6B; }

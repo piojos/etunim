@@ -14,15 +14,15 @@
 				<div class="attending profiles">
 					<h3>Participantes</h3>
 					<a href="#" data-tooltip-content="Nombre Apellido">
-						<img src="http://placehold.it/42" alt="Nombre Apellido">
+						<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 						<h4>Nombre</h4>
 					</a>
 					<a href="#" data-tooltip-content="Nombre Apellido">
-						<img src="http://placehold.it/42" alt="Nombre Apellido">
+						<img src="<?php echo profile(); ?>" alt="Nombre Apellido">
 						<h4>Nombre</h4>
 					</a>
 					<a href="#" class="add" data-tooltip-content="Nombre Apellido">
-						<img src="http://placehold.it/42/FFFFFF/003366" alt="Nombre Apellido">
+						<img src="<?php echo profile('white'); ?>" alt="Nombre Apellido">
 						<h4>Agregar</h4>
 					</a>
 				</div>
@@ -56,7 +56,7 @@
 				<div class="card newtask">
 					<div class="circle profiles">
 						<div>
-							<img src="http://placehold.it/42" alt="">
+							<img src="<?php echo profile(); ?>" alt="">
 						</div>
 					</div>
 					<form class="" action="index.html" method="post">
