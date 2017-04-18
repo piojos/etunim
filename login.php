@@ -32,14 +32,14 @@
 
 	<div class="modal">
 		<div class="head">
-			<a href="#" class="logo"><img src="http://placehold.it/170x40" alt=""></a>
+			<a href="#" class="logo"><img src="img/logo-white-large.svg" alt=""></a>
 		</div>
 		<div class="content">
 			<p>Inicia sesión con tus redes:</p>
 			<div class="social">
-				<a href="#" class="circle button"><img src="http://placehold.it/20" alt=""></a>
-				<a href="#" class="circle button"><img src="http://placehold.it/20" alt=""></a>
-				<a href="#" class="circle button"><img src="http://placehold.it/20" alt=""></a>
+				<a href="#" class="circle button"><img src="img/sm-linkedin.svg" alt=""></a>
+				<a href="#" class="circle button"><img src="img/sm-twitter.svg" alt=""></a>
+				<a href="#" class="circle button"><img src="img/sm-facebook.svg" alt=""></a>
 			</div>
 			<div class="manual">
 				<p>o con tus datos:</p>
