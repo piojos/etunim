@@ -66,5 +66,4 @@
 	<?php comments('closed'); ?>
 
 
-</body>
-</html>
+<?php include 'footer.php'; ?>

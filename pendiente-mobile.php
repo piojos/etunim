@@ -84,5 +84,5 @@
 		<a href="#" class="button blue resolve">Resolver <div class="checkbox"></div></a>
 	</div>
 
-</body>
-</html>
+
+<?php include 'footer.php'; ?>

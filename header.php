@@ -23,13 +23,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script>
-	$(document).ready(function(){
-		$('a.menu-toggle').click(function(){
-			$('header').toggleClass('open-menu');
-		});
-	});
-	</script>
 
 	<!-- Favicon
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
