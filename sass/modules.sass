@@ -527,7 +527,7 @@ hr
 				&:before
 					content: url('../img/ic-task-done.svg')
 					position: relative
-					left: 0.25em
+					left: 0.1em
 					top: -.1em
 	&:before
 		content: ''
@@ -684,12 +684,16 @@ a.button.resolve
 		top: 0
 		left: 0
 		z-index: 200
+		display: none
 
 .modal
 	z-index: 201
 	padding: 1.4rem 2rem
 	&.tooltip
 		border-radius: $radius
+	&#notifications,
+	&#my-profile
+		margin: 0
 	&#notifications
 		width: 40rem
 	&#profile-stats .header
@@ -723,7 +727,7 @@ a.button.resolve
 		position: absolute
 		width: 1em
 		height: 1em
-		top: 1.75em
+		top: 1em
 		right: 2rem
 		&:before, &:after
 			width: 100%
@@ -731,7 +735,7 @@ a.button.resolve
 			border-top: .2rem solid $lightgray
 			display: block
 			transform: rotate(45deg)
-			top: 0
+			top: .5em
 			left: 0
 			position: absolute
 		&:before

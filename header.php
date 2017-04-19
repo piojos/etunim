@@ -73,3 +73,5 @@
 			<a href="#" class="mobile-button menu-toggle"><div class="has-alert"></div><hr></a>
 		</div>
 	</header>
+
+	<div class="overlay"></div>

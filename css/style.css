@@ -579,7 +579,7 @@ hr {
     .card.done .checkbox .square:before {
       content: url("../img/ic-task-done.svg");
       position: relative;
-      left: 0.25em;
+      left: 0.1em;
       top: -0.1em; }
   .card:before {
     content: "";
@@ -690,13 +690,16 @@ a.button.resolve {
   height: 100vh;
   top: 0;
   left: 0;
-  z-index: 200; }
+  z-index: 200;
+  display: none; }
 
 .modal {
   z-index: 201;
   padding: 1.4rem 2rem; }
   .modal.tooltip {
     border-radius: 0.5rem; }
+  .modal#notifications, .modal#my-profile {
+    margin: 0; }
   .modal#notifications {
     width: 40rem; }
   .modal#profile-stats .header {
@@ -728,7 +731,7 @@ a.button.resolve {
     position: absolute;
     width: 1em;
     height: 1em;
-    top: 1.75em;
+    top: 1em;
     right: 2rem; }
     .modal a.close:before, .modal a.close:after {
       width: 100%;
@@ -736,7 +739,7 @@ a.button.resolve {
       border-top: 0.2rem solid #DDDCDA;
       display: block;
       transform: rotate(45deg);
-      top: 0;
+      top: 0.5em;
       left: 0;
       position: absolute; }
     .modal a.close:before {
