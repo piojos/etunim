@@ -48,6 +48,7 @@
 	<div class="middle tasks">
 		<h3>Pendientes (<span class="amount">2</span>)</h3>
 		<div class="cards"><?php
+			echo card('blank');
 			echo card('square overdue');
 			echo card('square single');
 			echo card('square done'); ?>
@@ -78,7 +79,7 @@
 		</div>
 	</div>
 
-	<?php comments(); ?>
+	<?php comments('blank'); ?>
 
 
 <?php include 'footer.php'; ?>

@@ -20,7 +20,10 @@
 	// FUNCTIONS
 
 	function card($status = array()) { ?>
-		<div class="card <?php echo $status; ?>">
+		<div class="card <?php echo $status; ?>"><?php
+		if(strpos($status, 'blank') !== false) {
+			echo '<p>Aún no hay pendientes en esta junta.</p>';
+		} else { ?>
 			<a href="<?php
 				if(strpos($status, 'meeting')) {
 					echo 'junta.php';
@@ -70,7 +73,8 @@
 				</div>
 			</div>
 			<?php } ?>
-			</a>
+			</a><?php
+		} ?>
 		</div><?php
 	}
 
@@ -83,10 +87,14 @@
 	function comments($status) { ?>
 		<div class="drawer right">
 			<div class="wrap">
-				<h3>Comentarios (<span class="amount">2</span>)</h3>
+				<h3>Comentarios (<span class="amount"><?php
+				if(strpos($status, 'blank') !== false ) { echo '0'; }
+				else { echo '3'; }
+
+				 ?></span>)</h3>
 			</div>
 			<div class="comments wrap"><?php
-				if(strpos($status, 'blank')) { ?>
+				if(strpos($status, 'blank') !== false ) { ?>
 				<div class="blank">
 					No hay comentarios aún.
 				</div>

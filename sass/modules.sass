@@ -451,6 +451,14 @@ hr
 //
 // Card
 
+
+.blankbox
+	border: 2px dashed $lightgray
+	color: $lightgray
+	padding: 1em 1.5em
+	text-align: center
+	margin-bottom: 2em
+
 .cards
 	.card
 		margin-bottom: 1em
@@ -556,6 +564,12 @@ hr
 		.details, .icons
 			margin-left: 14%
 			width: 80%
+
+	&.blank
+		@extend .blankbox
+		background: none
+		box-shadow: none
+		min-height: inherit
 
 	@media (max-width: 550px)
 		padding-bottom: 1em

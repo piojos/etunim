@@ -513,6 +513,13 @@ hr {
     .attending.profiles .add img {
       border: 1px dashed #C0BCBB; }
 
+.blankbox, .card.blank, .comments .blank {
+  border: 2px dashed #DDDCDA;
+  color: #DDDCDA;
+  padding: 1em 1.5em;
+  text-align: center;
+  margin-bottom: 2em; }
+
 .cards .card {
   margin-bottom: 1em; }
 .cards.task a.button {
@@ -606,6 +613,10 @@ hr {
     .card.square .details, .card.square .icons {
       margin-left: 14%;
       width: 80%; }
+  .card.blank {
+    background: none;
+    box-shadow: none;
+    min-height: inherit; }
   @media (max-width: 550px) {
     .card {
       padding-bottom: 1em; }
@@ -1071,12 +1082,6 @@ body.detail-view {
 
 .comments {
   padding-bottom: 4em; }
-  .comments .blank {
-    border: 2px dashed #DDDCDA;
-    color: #DDDCDA;
-    padding: 1em 1.5em;
-    text-align: center;
-    margin-bottom: 2em; }
   .comments .profile.picture {
     border-radius: 50%;
     display: block;
