@@ -111,6 +111,7 @@
 <div class="create modal profile" id="new-meeting">
 	<div class="container">
 		<h2>Crear Junta</h2>
+		<a href="#" class="close"></a>
 		<form class="" action="index.html" method="post">
 			<div class="row">
 				<div class="one-half column">

@@ -26,8 +26,8 @@
 					</li>
 				</ul>
 				<div class="actions">
-					<a href="#" class="button yellow"> Crear junta</a>
-					<a href="#" class="button blue"> Agregar pendiente</a>
+					<a id="newmeeting_launch" href="#" class="button yellow"> Crear junta</a>
+					<a id="newtask_launch" href="#" class="button blue"> Agregar pendiente</a>
 				</div>
 			</div>
 

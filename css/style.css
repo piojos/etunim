@@ -306,6 +306,15 @@ hr {
 .priority.max:before {
   background: #D61D37; }
 
+.modal_placeholder {
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 .modal {
   background: white;
   position: relative;

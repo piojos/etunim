@@ -21,7 +21,6 @@
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 	<!-- Favicon
@@ -74,4 +73,5 @@
 		</div>
 	</header>
 
+	<div class="modal_placeholder"></div>
 	<div class="overlay"></div>
