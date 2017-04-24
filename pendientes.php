@@ -25,14 +25,60 @@
 							</div>
 						</li>
 						<li>
-							<div class="dropdown">
-								<select class="" name="">
-									<option value="">Todos los Usuarios</option>
-									<option value="">Martín Martinez</option>
-									<option value="">Gonzalo Gonzalez</option>
-									<option value="">Domingo Domínguez</option>
-									<option value="">Ana Ancira</option>
-								</select>
+							<div class="nice dropdown checkbox">
+								<span class="previewnames"><strong>Raul</strong>, <strong>Ana</strong></span>
+								<div class="heightlimit">
+									<ul>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="martinmartinez" class="Martin">
+												<label for="martinmartinez">Martín Martinez</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="GonzaloGonzalez" class="Gonzalo">
+												<label for="GonzaloGonzalez">Gonzalo Gonzalez</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="DomingoDomínguez" class="Domingo">
+												<label for="DomingoDomínguez">Domingo Domínguez</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="AnaAncira" class="Ana" checked>
+												<label for="AnaAncira">Ana Ancira</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="TiburcioTijerina" class="Tiburcio">
+												<label for="TiburcioTijerina">Tiburcio Tijerina</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="RaulRamirez" class="Raul" checked>
+												<label for="RaulRamirez">Raul Ramirez</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="YanethYañez" class="Yaneth">
+												<label for="YanethYañez">Yaneth Yañez</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="select_profile" id="SamuelSamudio" class="Samuel">
+												<label for="SamuelSamudio">Samuel Samudio</label>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li>

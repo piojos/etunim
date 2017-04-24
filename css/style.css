@@ -196,6 +196,19 @@ select {
   border: none;
   outline: none; }
 
+.nice.dropdown.checkbox ul {
+  width: 100%;
+  background: #DDDCDA;
+  position: absolute;
+  padding: 1rem 0; }
+  .nice.dropdown.checkbox ul li {
+    padding: 1rem 2rem;
+    border: none; }
+.nice .heightlimit {
+  display: none;
+  position: relative;
+  z-index: 3; }
+
 .tick-button {
   position: relative; }
 

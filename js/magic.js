@@ -66,4 +66,23 @@ $(document).ready(function(){
 	});
 
 
+	$('.nice.dropdown').click(function(){
+		$(this).find('.heightlimit').fadeIn();
+	});
+
+	// $('.nice.dropdown input[type="checkbox"]').on('change', function() {
+	// 	alert($(this).attr("class"));
+	// });
+
+	$('.nice.dropdown input[type="checkbox"]').click(function() {
+		var pNames =  $('.previewnames').html();
+		console.log(pNames);
+		if ($(this).is(':checked')) {
+			// var pNames =  $('.previewnames').text();
+			console.log($(this).attr("class")+' is checked.');
+		} else {
+			console.log($(this).attr("class")+' unchecked.');
+		}
+	});
+
 });
