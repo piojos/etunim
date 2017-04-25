@@ -67,22 +67,45 @@ $(document).ready(function(){
 
 
 	$('.nice.dropdown').click(function(){
+		event.stopPropagation();
 		$(this).find('.heightlimit').fadeIn();
 	});
+	$(window).click(function() {
+		$('.nice.dropdown .heightlimit').fadeOut();
+	});
 
-	// $('.nice.dropdown input[type="checkbox"]').on('change', function() {
-	// 	alert($(this).attr("class"));
-	// });
+	function checkchecked(currentIs) {
+		var pNames = new Array();
+		var ddID;
+		if(currentIs) {
+			ddID = $(currentIs).closest('.nice.dropdown').attr('id');
+		} else {
+			ddID = $('.nice.dropdown').attr('id');
+		}
+
+		// Collect Checked options
+		$('#'+ddID+'.nice.dropdown li').each(function() {
+			var thisCheckbox = $(this).find(' input[type="checkbox"]');
+			if ((thisCheckbox).is(':checked')) {
+				pNames.push(thisCheckbox.attr('class'));
+			}
+		});
+
+		var stringPNames = '\<strong\>'+pNames.join('\<\/strong\>, \<strong\>')+'\<\/strong\>';
+		console.log(pNames);
+
+//
+		if(pNames.length > 0 && pNames !== 'undefined') {
+			$('#'+ddID+'.nice.dropdown .previewlabel').html(stringPNames);
+		} else {
+			$('#'+ddID+'.nice.dropdown .previewlabel').html('Todos los miembros');
+		}
+	}
+
+	checkchecked();
 
 	$('.nice.dropdown input[type="checkbox"]').click(function() {
-		var pNames =  $('.previewnames').html();
-		console.log(pNames);
-		if ($(this).is(':checked')) {
-			// var pNames =  $('.previewnames').text();
-			console.log($(this).attr("class")+' is checked.');
-		} else {
-			console.log($(this).attr("class")+' unchecked.');
-		}
+		checkchecked(this);
 	});
 
 });

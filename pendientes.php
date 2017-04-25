@@ -25,12 +25,12 @@
 							</div>
 						</li>
 						<li>
-							<div class="nice dropdown checkbox">
-								<span class="previewnames"><strong>Raul</strong>, <strong>Ana</strong></span>
+							<div class="nice dropdown checkbox" id="select_profile">
+								<div class="previewlabel">a</div>
 								<div class="heightlimit">
-									<ul>
-										<li>
-											<div class="tick-button">
+									<ul id="div-tick">
+										<li id="div-tick">
+											<div class="tick-button" id="div-tick">
 												<input type="checkbox" name="select_profile" id="martinmartinez" class="Martin">
 												<label for="martinmartinez">Martín Martinez</label>
 											</div>
