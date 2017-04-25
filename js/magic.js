@@ -1,8 +1,15 @@
 $(document).ready(function(){
+
+
+	// MOBILE MENU
 	$('a.menu-toggle').click(function(){
 		$('header').toggleClass('open-menu');
 	});
 
+
+
+
+	// MODALS: PROFILE & NOTIFICATIONS
 
 	$('header a.profile').click(function(e){
 		e.preventDefault();
@@ -42,6 +49,10 @@ $(document).ready(function(){
 	});
 
 
+
+
+	// MODALS: CENTERED MODALS
+
 	$('a#newmeeting_launch').click(function(e){
 		e.preventDefault();
 
@@ -66,9 +77,17 @@ $(document).ready(function(){
 	});
 
 
-	$('.nice.dropdown').click(function(){
+
+
+	// Nice DROPDOWNS
+	// – Missing: get initial previewlabel and restore when pName is empty.
+
+	$('.nice.dropdown .previewlabel').click(function(){
+		if($('.heightlimit').is(':visible')) {
+			$('.heightlimit').fadeOut();
+		}
 		event.stopPropagation();
-		$(this).find('.heightlimit').fadeIn();
+		$(this).parent().find('.heightlimit').fadeIn();
 	});
 	$(window).click(function() {
 		$('.nice.dropdown .heightlimit').fadeOut();
@@ -85,26 +104,25 @@ $(document).ready(function(){
 
 		// Collect Checked options
 		$('#'+ddID+'.nice.dropdown li').each(function() {
-			var thisCheckbox = $(this).find(' input[type="checkbox"]');
+			var thisCheckbox = $(this).find(' input[type="checkbox"], input[type="radio"]');
 			if ((thisCheckbox).is(':checked')) {
-				pNames.push(thisCheckbox.attr('class'));
+				pNames.push(thisCheckbox.attr('title'));
 			}
 		});
 
 		var stringPNames = '\<strong\>'+pNames.join('\<\/strong\>, \<strong\>')+'\<\/strong\>';
 		console.log(pNames);
 
-//
 		if(pNames.length > 0 && pNames !== 'undefined') {
 			$('#'+ddID+'.nice.dropdown .previewlabel').html(stringPNames);
 		} else {
-			$('#'+ddID+'.nice.dropdown .previewlabel').html('Todos los miembros');
+			$('#'+ddID+'.nice.dropdown .previewlabel').html('Todos');
 		}
 	}
 
 	checkchecked();
 
-	$('.nice.dropdown input[type="checkbox"]').click(function() {
+	$('.nice.dropdown input[type="checkbox"], .nice.dropdown input[type="radio"]').click(function() {
 		checkchecked(this);
 	});
 

@@ -162,64 +162,64 @@
 
 
 	// NICE DROPDOWNS
-	function dropdown($style) {
+	function dropdownProfiles($style) {
 		if($style == 'radio') {
 			$styleClass = 'radio';
 		} else {
 			$styleClass = 'checkbox';
 		}
 		$construct = '
-		<div class="nice dropdown '.$styleClass.'" id="select_profile">
-			<div class="previewlabel">a</div>
+		<div class="nice dropdown '.$styleClass.'" id="choose_profile">
+			<div class="previewlabel">Todos los miembros</div>
 			<div class="heightlimit">
 				<ul id="div-tick">';
 		if($style == 'radio') {
 			$construct .= '
 					<li id="div-tick">
 						<div class="tick-button" id="div-tick">
-							<input type="radio" name="select_profile" id="martinmartinez" class="Martin">
+							<input type="radio" name="choose_profile" id="martinmartinez" title="Martin">
 							<label for="martinmartinez">Martín Martinez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="GonzaloGonzalez" class="Gonzalo">
+							<input type="radio" name="choose_profile" id="GonzaloGonzalez" title="Gonzalo">
 							<label for="GonzaloGonzalez">Gonzalo Gonzalez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="DomingoDomínguez" class="Domingo">
+							<input type="radio" name="choose_profile" id="DomingoDomínguez" title="Domingo">
 							<label for="DomingoDomínguez">Domingo Domínguez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="AnaAncira" class="Ana" checked>
+							<input type="radio" name="choose_profile" id="AnaAncira" title="Ana" checked>
 							<label for="AnaAncira">Ana Ancira</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="TiburcioTijerina" class="Tiburcio">
+							<input type="radio" name="choose_profile" id="TiburcioTijerina" title="Tiburcio">
 							<label for="TiburcioTijerina">Tiburcio Tijerina</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="RaulRamirez" class="Raul" checked>
+							<input type="radio" name="choose_profile" id="RaulRamirez" title="Raul" checked>
 							<label for="RaulRamirez">Raul Ramirez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="YanethYañez" class="Yaneth">
+							<input type="radio" name="choose_profile" id="YanethYañez" title="Yaneth">
 							<label for="YanethYañez">Yaneth Yañez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="radio" name="select_profile" id="SamuelSamudio" class="Samuel">
+							<input type="radio" name="choose_profile" id="SamuelSamudio" title="Samuel">
 							<label for="SamuelSamudio">Samuel Samudio</label>
 						</div>
 					</li>';
@@ -227,49 +227,49 @@
 			$construct .= '
 					<li id="div-tick">
 						<div class="tick-button" id="div-tick">
-							<input type="checkbox" name="select_profile" id="martinmartinez" class="Martin">
+							<input type="checkbox" name="choose_profile" id="martinmartinez" title="Martin">
 							<label for="martinmartinez">Martín Martinez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="GonzaloGonzalez" class="Gonzalo">
+							<input type="checkbox" name="choose_profile" id="GonzaloGonzalez" title="Gonzalo">
 							<label for="GonzaloGonzalez">Gonzalo Gonzalez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="DomingoDomínguez" class="Domingo">
+							<input type="checkbox" name="choose_profile" id="DomingoDomínguez" title="Domingo">
 							<label for="DomingoDomínguez">Domingo Domínguez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="AnaAncira" class="Ana" checked>
+							<input type="checkbox" name="choose_profile" id="AnaAncira" title="Ana" checked>
 							<label for="AnaAncira">Ana Ancira</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="TiburcioTijerina" class="Tiburcio">
+							<input type="checkbox" name="choose_profile" id="TiburcioTijerina" title="Tiburcio">
 							<label for="TiburcioTijerina">Tiburcio Tijerina</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="RaulRamirez" class="Raul" checked>
+							<input type="checkbox" name="choose_profile" id="RaulRamirez" title="Raul" checked>
 							<label for="RaulRamirez">Raul Ramirez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="YanethYañez" class="Yaneth">
+							<input type="checkbox" name="choose_profile" id="YanethYañez" title="Yaneth">
 							<label for="YanethYañez">Yaneth Yañez</label>
 						</div>
 					</li>
 					<li>
 						<div class="tick-button">
-							<input type="checkbox" name="select_profile" id="SamuelSamudio" class="Samuel">
+							<input type="checkbox" name="choose_profile" id="SamuelSamudio" title="Samuel">
 							<label for="SamuelSamudio">Samuel Samudio</label>
 						</div>
 					</li>';

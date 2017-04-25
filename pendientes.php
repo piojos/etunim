@@ -25,36 +25,87 @@
 							</div>
 						</li>
 						<li>
-							<?php echo dropdown(); ?>
+							<?php echo dropdownProfiles(); ?>
 						</li>
 						<li>
-							<div class="dropdown">
-								<select class="" name="">
-									<option value="">Etiqueta</option>
-									<option value="">Productividad</option>
-									<option value="">Administración</option>
-									<option value="">MinuteApp</option>
-								</select>
+							<div class="nice dropdown checkbox" id="choose_tags">
+								<div class="previewlabel">Etiquetas</div>
+								<div class="heightlimit">
+									<ul id="div-tick">
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_tags" id="Productividad" title="Productividad">
+												<label for="Productividad">Productividad</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_tags" id="Administración" title="Administración">
+												<label for="Administración">Administración</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_tags" id="MinuteApp" title="MinuteApp">
+												<label for="MinuteApp">MinuteApp</label>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="dropdown">
-								<select class="" name="">
-									<option value="">Prioridad</option>
-									<option value="">Alta</option>
-									<option value="">Media</option>
-									<option value="">Baja</option>
-								</select>
+							<div class="nice dropdown radio" id="choose_priority">
+								<div class="previewlabel">Prioridad</div>
+								<div class="heightlimit">
+									<ul id="div-tick">
+										<li>
+											<div class="tick-button">
+												<input type="radio" name="choose_priority" id="Alta" title="Alta">
+												<label for="Alta">Alta</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="radio" name="choose_priority" id="Media" title="Media">
+												<label for="Media">Media</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="radio" name="choose_priority" id="Baja" title="Baja">
+												<label for="Baja">Baja</label>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li>
-							<div class="dropdown">
-								<select class="" name="">
-									<option value="">Junta</option>
-									<option value="">Productividad</option>
-									<option value="">Administración</option>
-									<option value="">MinuteApp</option>
-								</select>
+							<div class="nice dropdown checkbox" id="choose_meeting">
+								<div class="previewlabel">Junta</div>
+								<div class="heightlimit">
+									<ul id="div-tick">
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_meeting" id="uniqueID_1203293" title="Brainstorm de Productividad">
+												<label for="uniqueID_1203293">Brainstorm de Productividad</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_meeting" id="uniqueID_1232293" title="Revisión de administración interna">
+												<label for="uniqueID_1232293">Revisión de administración interna</label>
+											</div>
+										</li>
+										<li>
+											<div class="tick-button">
+												<input type="checkbox" name="choose_meeting" id="uniqueID_1weew93" title="Introducción a MinuteApp">
+												<label for="uniqueID_1weew93">Introducción a MinuteApp</label>
+											</div>
+										</li>
+									</ul>
+								</div>
 							</div>
 						</li>
 						<li>
