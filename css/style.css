@@ -186,6 +186,17 @@ textarea {
     border-color: #DDDCDA;
     outline: none; }
 
+input.icondetail {
+  background-image: url("../img/ic-date.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center; }
+  input.icondetail.date {
+    background-image: url("../img/ic-date.svg"); }
+  input.icondetail.time {
+    background-image: url("../img/ic-time.svg"); }
+  input.icondetail.location {
+    background-image: url("../img/ic-place.svg"); }
+
 .small {
   font-size: 1.2rem; }
 
@@ -1231,3 +1242,56 @@ body.detail-view {
     display: none; }
 .mobile.detail-view .comments.wrap {
   padding: 1.5em; }
+
+.ui-timepicker-wrapper {
+  background: #DDDCDA;
+  min-width: 12em;
+  margin-left: 1em; }
+
+.ui-timepicker-list li {
+  padding: 1rem 1em; }
+
+.ui-datepicker {
+  font: inherit;
+  background: #DDDCDA;
+  position: absolute;
+  top: 0.6rem;
+  left: 3%;
+  z-index: 1;
+  padding: 1em 1em;
+  font-size: 1.2rem; }
+  .ui-datepicker table {
+    width: 100%; }
+    .ui-datepicker table .activity {
+      font-weight: bold;
+      color: #0C7BD5; }
+  .ui-datepicker th, .ui-datepicker td {
+    text-align: center;
+    padding: 0.5rem 0 0; }
+  .ui-datepicker thead th {
+    font-weight: bold; }
+  .ui-datepicker td span,
+  .ui-datepicker td a {
+    text-align: center; }
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: none;
+  background: none;
+  font-weight: bold; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 0.1rem solid rgba(255, 255, 255, 0);
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: none; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus {
+  border-color: white; }
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  background: white; }
+
+.ui-widget-header {
+  border: none;
+  background: none; }

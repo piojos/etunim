@@ -73,6 +73,10 @@ $(document).ready(function(){
 				$('.overlay').fadeOut();
 				// $('html').css({overflow: 'auto'});
 			});
+			$( document ).ready(function() {
+				$('#timepicker').timepicker();
+				$('#datepicker').datepicker(); // Couldn't figure it out, pero ya tiene estilo :(
+			});
 		});
 	});
 
@@ -84,13 +88,13 @@ $(document).ready(function(){
 
 	$('.nice.dropdown .previewlabel').click(function(){
 		if($('.heightlimit').is(':visible')) {
-			$('.heightlimit').fadeOut();
+			$('.heightlimit').fadeOut('fast');
 		}
 		event.stopPropagation();
-		$(this).parent().find('.heightlimit').fadeIn();
+		$(this).parent().find('.heightlimit').fadeIn('fast');
 	});
 	$(window).click(function() {
-		$('.nice.dropdown .heightlimit').fadeOut();
+		$('.nice.dropdown .heightlimit').fadeOut('fast');
 	});
 
 	function checkchecked(currentIs) {
@@ -111,7 +115,6 @@ $(document).ready(function(){
 		});
 
 		var stringPNames = '\<strong\>'+pNames.join('\<\/strong\>, \<strong\>')+'\<\/strong\>';
-		console.log(pNames);
 
 		if(pNames.length > 0 && pNames !== 'undefined') {
 			$('#'+ddID+'.nice.dropdown .previewlabel').html(stringPNames);
@@ -125,5 +128,14 @@ $(document).ready(function(){
 	$('.nice.dropdown input[type="checkbox"], .nice.dropdown input[type="radio"]').click(function() {
 		checkchecked(this);
 	});
+
+
+
+
+	// DATE & TIME Pickers
+
+	$('#datepicker').datepicker();
+	// $('.datepicker').datepicker('option', 'dateFormat', 'yy-mm-dd');
+	$('#timepicker').timepicker();
 
 });

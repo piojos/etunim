@@ -367,3 +367,57 @@ body.detail-view
 			display: none
 	.comments.wrap
 		padding: 1.5em
+
+
+// Pickers
+.ui-timepicker-wrapper
+	background: $lightgray
+	min-width: 12em
+	margin-left: 1em
+
+.ui-timepicker-list li
+	padding: 1rem 1em
+
+
+
+
+
+
+
+.ui-datepicker
+	font: inherit
+	background: $lightgray
+	position: absolute
+	top: 0.6rem
+	left: 3%
+	z-index: 1
+	padding: 1em 1em
+	font-size: 1.2rem
+	table
+		width: 100%
+		.activity
+			font-weight: bold
+			color: #0C7BD5
+	th, td
+		text-align: center
+		padding: 0.5rem 0 0
+	thead th
+		font-weight: bold
+	td span,
+	td a
+		text-align: center
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+	border: none
+	background: none
+	font-weight: bold
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	border: .1rem solid rgba(255, 255, 255, 0)
+	+border-radius(50%)
+	background: none
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-button:hover, .ui-button:focus
+	border-color: white
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	background: white
+.ui-widget-header
+	border: none
+	background: none

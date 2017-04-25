@@ -116,11 +116,11 @@
 			<div class="row">
 				<div class="one-half column">
 					<h3>Detalles Generales</h3>
-					<input type="text" name="" value="" placeholder="Título de la Junta">
-					<input type="text" name="" value="" placeholder="Fecha de la junta">
-					<input type="text" name="" value="" placeholder="Hora de la junta">
-					<input type="text" name="" value="" placeholder="Lugar de la junta">
-					<textarea name="name" rows="4" placeholder="Objetivos de la junta"></textarea>
+					<input type="text" name="title" value="" placeholder="Título de la Junta">
+					<input type="text" name="date" value="" placeholder="Fecha de la junta" class="icondetail date hasDatepicker" id="datepicker">
+					<input type="text" name="hour" value="" placeholder="Hora de la junta" class="icondetail time" id="timepicker">
+					<input type="text" name="place" value="" placeholder="Lugar de la junta" class="icondetail location">
+					<textarea name="objectives" rows="4" placeholder="Objetivos de la junta"></textarea>
 				</div>
 				<div class="one-half column">
 					<h3>Participantes</h3>
