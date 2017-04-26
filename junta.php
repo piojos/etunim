@@ -62,12 +62,39 @@
 					</div>
 					<form class="" action="index.html" method="post">
 						<input type="text" name="task-name" value="" placeholder="Nombre de la tarea">
-						<input type="text" name="task-name" value="" placeholder="Responsables">
-						<input type="text" name="task-name" value="" placeholder="Fecha de entrega">
+						<?php // <input type="text" name="task-people" value="" placeholder="Responsables">
+						echo dropdownProfiles(); ?>
+						<input type="text" name="task-duedate" value="" placeholder="Fecha de entrega">
 						<div class="month" style="display:none">
 							<?php include 'inc/calendar.php'; ?>
 						</div>
-						<input type="text" name="task-name" value="" placeholder="Prioridad">
+						<?php //<input type="text" name="task-name" value="" placeholder="Prioridad"> ?>
+						<div class="nice dropdown radio" id="choose_priority">
+							<div class="previewlabel">Prioridad</div>
+							<div class="heightlimit">
+								<ul id="div-tick">
+									<li>
+										<div class="tick-button">
+											<input type="radio" name="choose_priority" id="Alta" title="Alta">
+											<label for="Alta">Alta</label>
+										</div>
+									</li>
+									<li>
+										<div class="tick-button">
+											<input type="radio" name="choose_priority" id="Media" title="Media">
+											<label for="Media">Media</label>
+										</div>
+									</li>
+									<li>
+										<div class="tick-button">
+											<input type="radio" name="choose_priority" id="Baja" title="Baja">
+											<label for="Baja">Baja</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+
 						<input type="submit" name="" value="Guardar" class="text-button">
 					</form>
 				</div>

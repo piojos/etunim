@@ -108,11 +108,15 @@ select
 			li
 				padding: 1rem 2rem
 				border: none
+		&::after
+			top: 1em
+			right: 1em
 	.heightlimit
 		display: none
 		position: absolute
 		z-index: 3
 		width: 100%
+		max-width: 20em
 		height: 14em
 		overflow-y: auto
 
@@ -511,7 +515,7 @@ hr
 		font-size: 1.4rem
 		padding: .65em 1.2em .6em
 .card
-	border-radius: $radius
+	+border-radius($radius)
 	box-shadow: $shadow
 	background: white
 	position: relative
@@ -548,7 +552,7 @@ hr
 	.incharge,
 	.deliver
 		@extend .ellipsis
-	.checkbox
+	.status.checkbox
 		width: 10%
 		text-align: right
 		padding: 1em 0 0
@@ -560,7 +564,12 @@ hr
 			height: 2em
 			border-radius: 5px
 			display: inline-block
-
+	.nice.dropdown
+		background: $whitegray
+		+border-radius($radius)
+		width: 80%
+		padding: 1em
+		margin-bottom: .5em
 	&.overdue
 		border: 2px solid $red
 		.square
@@ -615,6 +624,7 @@ hr
 		background: none
 		box-shadow: none
 		min-height: inherit
+		overflow: hidden
 
 	@media (max-width: 550px)
 		padding-bottom: 1em
@@ -647,8 +657,9 @@ hr
 			position: relative
 			top: -1em
 		input
-			width: 80%
-			margin-bottom: .5em
+			&[type="text"]
+				width: 80%
+				margin-bottom: .5em
 			&.text-button
 				background: none
 				border: none
@@ -656,7 +667,11 @@ hr
 				padding-left: 0
 				padding-right: 0
 				display: block
-
+		.nice
+			.heightlimit
+				max-height: 10em
+		#choose_priority.nice .heightlimit
+			top: -3em
 
 
 .loadcard
@@ -866,6 +881,16 @@ a.button.resolve
 			margin-bottom: .5em
 		.actions .text-button
 			float: right
+	.nice.dropdown
+		background: $whitegray
+		+border-radius(.5rem)
+		padding: 1em
+		margin-bottom: 0.5em
+	.nice .heightlimit
+		max-height: 10em
+	#choose_priority.nice .heightlimit
+		top: -6em
+
 
 .activity.cards .card
 	padding-left: 4em

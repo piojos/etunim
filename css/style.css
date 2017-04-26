@@ -217,11 +217,15 @@ select {
   .nice.dropdown ul li {
     padding: 1rem 2rem;
     border: none; }
+.nice.dropdown::after {
+  top: 1em;
+  right: 1em; }
 .nice .heightlimit {
   display: none;
   position: absolute;
   z-index: 3;
   width: 100%;
+  max-width: 20em;
   height: 14em;
   overflow-y: auto; }
 
@@ -568,6 +572,8 @@ hr {
   padding: 0.65em 1.2em 0.6em; }
 
 .card {
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   background: white;
@@ -598,18 +604,26 @@ hr {
       margin-right: 1rem; }
       .card .icons > div:last-child {
         margin-right: 0; }
-  .card .checkbox {
+  .card .status.checkbox {
     width: 10%;
     text-align: right;
     padding: 1em 0 0;
     position: absolute;
     right: 2rem; }
-    .card .checkbox .square {
+    .card .status.checkbox .square {
       border: 3px solid #DDDCDA;
       width: 2em;
       height: 2em;
       border-radius: 5px;
       display: inline-block; }
+  .card .nice.dropdown {
+    background: #EDEDED;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    padding: 1em;
+    margin-bottom: 0.5em; }
   .card.overdue {
     border: 2px solid #D61D37; }
     .card.overdue .square {
@@ -657,7 +671,8 @@ hr {
   .card.blank {
     background: none;
     box-shadow: none;
-    min-height: inherit; }
+    min-height: inherit;
+    overflow: hidden; }
   @media (max-width: 550px) {
     .card {
       padding-bottom: 1em; }
@@ -683,16 +698,20 @@ hr {
     padding-left: 1em;
     position: relative;
     top: -1em; }
-  .card.newtask input {
+  .card.newtask input[type="text"] {
     width: 80%;
     margin-bottom: 0.5em; }
-    .card.newtask input.text-button {
-      background: none;
-      border: none;
-      width: initial;
-      padding-left: 0;
-      padding-right: 0;
-      display: block; }
+  .card.newtask input.text-button {
+    background: none;
+    border: none;
+    width: initial;
+    padding-left: 0;
+    padding-right: 0;
+    display: block; }
+  .card.newtask .nice .heightlimit {
+    max-height: 10em; }
+  .card.newtask #choose_priority.nice .heightlimit {
+    top: -3em; }
 
 .loadcard {
   background: lightgray;
@@ -863,6 +882,17 @@ a.button.resolve {
       margin-bottom: 0.5em; }
     .modal.create .actions .text-button {
       float: right; }
+  .modal .nice.dropdown {
+    background: #EDEDED;
+    -moz-border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1em;
+    margin-bottom: 0.5em; }
+  .modal .nice .heightlimit {
+    max-height: 10em; }
+  .modal #choose_priority.nice .heightlimit {
+    top: -6em; }
 
 .activity.cards .card {
   padding-left: 4em; }

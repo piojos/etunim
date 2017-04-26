@@ -185,10 +185,37 @@
 				<div class="one-half column">
 					<h3>&nbsp;</h3>
 					<input type="text" name="" value="" placeholder="Nombre del pendiente">
-					<input type="text" name="" value="" placeholder="Responsables">
-					<input type="text" name="" value="" placeholder="Fecha de entrega">
+					<?php // <input type="text" name="" value="" placeholder="Responsables">
+					echo dropdownProfiles(); ?>
+					<input type="text" name="" value="" placeholder="Fecha de entrega" class="icondetail date hasDatepicker" id="datepicker">
+					<?php
+						// <input type="text" name="" value="" placeholder="Prioridad"> ?>
 					<input type="text" name="" value="" placeholder="Etiquetas">
-					<input type="text" name="" value="" placeholder="Prioridad">
+					<div class="nice dropdown radio" id="choose_priority">
+						<div class="previewlabel">Prioridad</div>
+						<div class="heightlimit">
+							<ul id="div-tick">
+								<li>
+									<div class="tick-button">
+										<input type="radio" name="choose_priority" id="Alta" title="Alta">
+										<label for="Alta">Alta</label>
+									</div>
+								</li>
+								<li>
+									<div class="tick-button">
+										<input type="radio" name="choose_priority" id="Media" title="Media">
+										<label for="Media">Media</label>
+									</div>
+								</li>
+								<li>
+									<div class="tick-button">
+										<input type="radio" name="choose_priority" id="Baja" title="Baja">
+										<label for="Baja">Baja</label>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
 				<div class="one-half column">
 					<h3>&nbsp;</h3>

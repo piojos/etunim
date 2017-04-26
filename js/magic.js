@@ -56,9 +56,6 @@ $(document).ready(function(){
 	$('a#newmeeting_launch').click(function(e){
 		e.preventDefault();
 
-		var p = $( this );
-		var position = p.offset();
-
 		$('body').addClass('active-modal');
 		$('.overlay').fadeIn();
 		// $('html').css({overflow: 'hidden'});
@@ -77,6 +74,44 @@ $(document).ready(function(){
 				$('#timepicker').timepicker();
 				$('#datepicker').datepicker(); // Couldn't figure it out, pero ya tiene estilo :(
 			});
+		});
+	});
+
+	$('a#newtask_launch').click(function(e){
+		e.preventDefault();
+
+		$('body').addClass('active-modal');
+		$('.overlay').fadeIn();
+
+		var link = 'modals.php';
+		$('.modal_placeholder').load(link+' #new-task');
+		$(document).ajaxComplete(function(){
+
+			$('a.close, .overlay').click(function(e){
+				e.preventDefault();
+				$( '.modal' ).remove();
+				$('.overlay').fadeOut();
+			});
+			$( document ).ready(function() {
+				// $('#timepicker').timepicker();
+				$('#datepicker').datepicker(); // Couldn't figure it out, pero ya tiene estilo :(
+			});
+
+			$('.nice.dropdown .previewlabel').click(function(){
+				if($('.heightlimit').is(':visible')) {
+					$('.heightlimit').fadeOut('fast');
+				}
+				event.stopPropagation();
+				$(this).parent().find('.heightlimit').fadeIn('fast');
+			});
+			$(window).click(function() {
+				$('.nice.dropdown .heightlimit').fadeOut('fast');
+			});
+
+			$('.nice.dropdown input[type="checkbox"], .nice.dropdown input[type="radio"]').click(function() {
+				checkchecked(this);
+			});
+
 		});
 	});
 
