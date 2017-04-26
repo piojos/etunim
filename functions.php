@@ -67,7 +67,7 @@
 				</div>
 			</div>
 			<?php if(!strpos($status, 'meeting')) { ?>
-			<div class="checkbox">
+			<div class="checkbox status">
 				<div class="square">
 					<div class="check"></div>
 				</div>
