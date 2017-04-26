@@ -9,7 +9,7 @@
 		<div class="wrap">
 			<h1>Junta de Arranque Proyecto Minute App</h1>
 			<div class="info">
-				<p class="tag date"><strong>27 febrero</strong>, a las <strong>4:00 pm</strong></p>
+				<p><span class="tag date"><strong>27 febrero</strong>, a las <strong>4:00 pm</strong></span></p>
 				<p class="via"><img src="img/ic-place-yellow.svg" alt=""> <strong>Via Skype</strong></p>
 				<div class="attending profiles">
 					<h3>Participantes</h3>

@@ -276,8 +276,7 @@ input[type="radio"] {
   padding: 0.1em 0.5em 0.2em;
   border-radius: 5px;
   color: white;
-  position: relative;
-  display: inline-block; }
+  position: relative; }
   .tag.red {
     background: #D61D37; }
   .tag.blue {
