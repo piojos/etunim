@@ -77,7 +77,7 @@ $(document).ready(function(){
 		});
 	});
 
-	$('a#newtask_launch').click(function(e){
+	$('a#newtask_launch, a#edittask_launch').click(function(e){
 		e.preventDefault();
 
 		$('body').addClass('active-modal');

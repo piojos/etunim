@@ -36,7 +36,7 @@
 					</div>
 				</div>
 				<div class="actions">
-					<a href="#" class="text-button">Editar</a>
+					<a href="#" id="edittask_launch" class="text-button">Editar</a>
 				</div>
 			</div>
 		</div>
